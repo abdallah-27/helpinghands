@@ -1,0 +1,48 @@
+    .card_comp {
+        border-radius: 1rem;
+        padding-bottom: 30px;
+        padding-right: -4%;
+        padding-top: -20rem;
+        margin-top: 2%;
+        background-color: #44BBA4;
+        width: 40%;
+        height: 30%;
+        margin-left: 40%;
+    }
+    
+    .Card_compImg {
+        margin-right: 1%;
+        border-radius: 100%;
+        margin-left: -70%;
+        margin-top: 3%;
+        height: 12rem;
+    }
+    
+    .cardContent {
+        margin-top: -26%;
+        margin-left: 30%;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        color: white;
+        line-height: 3%;
+        font-weight: 100;
+    }
+    
+    .price {
+        margin-left: 25%;
+        margin-top: 4%;
+        color: white;
+    }
+    
+    .star {
+        color: white;
+        margin-left: 60%;
+        margin-top: -4%;
+    }
+    
+    .title {
+        margin-bottom: 2%;
+        font-size: 22px;
+    }
