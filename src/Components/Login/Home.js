@@ -1,9 +1,9 @@
 import React from "react";
 
-const Home = () => {
+function Home() {
   return (
     <>
-      <h1>Home</h1>
+      <h1>Login Successfully</h1>
     </>
   );
 }

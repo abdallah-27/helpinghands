@@ -36,3 +36,123 @@
     transform: rotate(360deg);
   }
 }
+
+*{
+  margin: 0;
+}
+.navbar-light {
+  color: #44BBA4;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.navbar-light > .container{
+
+  text-align: center;
+  
+}
+.navbar-light > .container > h4{
+    background-color: #44BBA4;
+    font-weight: bold;
+    width: 180px;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+p{
+  font-size: large;
+}
+
+  .outer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .inner {
+    width: 450px;
+    margin: auto;
+    background: #44BBA4;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 40px 55px 45px 55px;
+    border-radius: 15px;
+    transition: all .3s;
+  }
+  
+  .outer .form-control:focus {
+    border-color: #167bff;
+    box-shadow: none;
+  }
+  
+  .outer h3 {
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 20px;
+  }
+  
+  label{
+    font-weight: 600;
+  }
+  .forgot-password,
+  .forgot-password{
+    text-align: right;
+    font-size: 16px;
+    padding-top: 10px;
+    color: #ffffff;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .forgot-password a {
+    color: #167bff;
+  }
+
+
+
+  body {
+    background: rgb(99, 39, 120)
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #44BBA4
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #44BBA4
+}
+
+.profile-button:focus {
+    background: #44BBA4;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #44BBA4;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #44BBA4;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #44BBA4;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
