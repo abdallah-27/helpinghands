@@ -9,12 +9,12 @@ const Details = () => {
         <div class="container">
             <div class="row">
                 <div class="col">
-              
+              <Detailssidebar/>
                 </div>
                 <div class="col-6">
                    <div className="center_div">
-                       <h3>General Details</h3>
-                       <h4>What is to be done?</h4>
+                       <h4>General Details</h4>
+                       <h5>What is to be done?</h5>
                     <Textlinecomponent className="line"/>
                       <br></br>
                       <br></br>

@@ -4,5 +4,27 @@
     height: 450px;
     background-color: #44bba4;
     color: #f6f7eb ;
-   
+        
    }
+
+.GD_div{
+   padding: 15px;
+   border-bottom: 1px solid white;
+}
+
+ .aa{
+    
+    color: white;
+    text-decoration: none;
+}
+
+.active{
+    color: blue;
+}
+
+.iconofdetail{
+    margin-left: 35px;
+    margin-right: 10px;
+}
+
+
