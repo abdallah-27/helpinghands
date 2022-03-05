@@ -6,7 +6,9 @@ import DateTime from '../Services/DateTime.js';
 import Details from "../Services/Details.js";
 import './Detailssidebar.css';
 import Dummy from "./dummy"; 
-import { MdFormatAlignJustify, MdFmdGood, MdInsertInvitation, MdOutlineSubtitles } from "react-icons/md";
+import { MdFormatAlignJustify,MdPostAdd,MdAddLocationAlt,MdLocalSee,
+     MdFmdGood,MdVerified,MdLibraryAdd,MdWallpaper,MdInsertPhoto,
+      MdInsertInvitation, MdOutlineSubtitles, MdCreditCard} from "react-icons/md";
 
 
 import MenuItem from '@material-ui/core/MenuItem';
@@ -27,7 +29,7 @@ const Detailssidebar = () =>{
        </div>
        <div className="GD_div">
            <div className="aa"  >
-       <MdFmdGood className="iconofdetail"/>
+       <MdAddLocationAlt className="iconofdetail"/>
        <NavLink className="aa" to="/details/address" exact>Address</NavLink>
        </div>
        </div>
@@ -40,7 +42,7 @@ const Detailssidebar = () =>{
        </div>
        <div className="GD_div">
            <div className="aa">           
-           <MdOutlineSubtitles className="iconofdetail"/>
+           <MdCreditCard className="iconofdetail"/>
        <NavLink className="aa" to="/details/payment">Payment</NavLink>
        </div>
 
