@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App"> 
       <Home/>
-      <Popup
+      {/* <Popup
         show={this.state.show}
         header='Lorem ipsum dolor sit amet.'
         headerButtons={[{
@@ -36,7 +36,7 @@ function App() {
             color:'white',
             backgroundColor:'lightgreen',
             text:"Tamam",
-        }]}/>
+        }]}/> */}
     </div>
   );
 }
