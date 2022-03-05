@@ -6,8 +6,22 @@
     margin-top: 2%;
     background-color: #44BBA4;
     width: 50%;
-    height: 30vh;
+    height: 28vh;
     margin-left: 40%;
+}
+
+.Tabdiv {}
+
+.postLine {
+    margin-top: 54%;
+}
+
+.postLineDone {
+    margin-top: 40%;
+}
+
+.noLogin {
+    margin-top: -50%;
 }
 
 .Card_compImg {

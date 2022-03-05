@@ -1,15 +1,9 @@
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBBtn,
-} from "mdb-react-ui-kit";
 import * as React from "react";
-import { render } from 'react-dom';
+import { render } from "react-dom";
 import ReactDOM from "react-dom";
 import "./Listing.css";
 
+import Data from "./data.json";
 import { NativeSelect, FormControl } from "@material-ui/core";
 import {
   MDBPagination,
@@ -17,82 +11,46 @@ import {
   MDBPaginationLink,
 } from "mdb-react-ui-kit";
 
-import { BsStarFill, BsStar, BsArrowRight,BsHouseFill } from "react-icons/bs";
+import { BsStarFill, BsStar, BsArrowRight, BsHouseFill } from "react-icons/bs";
 import { useState } from "react";
-import CheckboxTree from 'react-checkbox-tree';
-import 'react-checkbox-tree/lib/react-checkbox-tree.css';
+import CheckboxTree from "react-checkbox-tree";
+import "react-checkbox-tree/lib/react-checkbox-tree.css";
 import { Link } from "react-router-dom";
 import Widget from "../FilterBarComponent/widget";
 
-
+import ListingCardComponent from "../ListingCardComponent/ListingCardComponent";
+import UserProfileComponent from "../userProfile/UserProfileComponent";
 
 const Listing = () => {
-
-  return (
-    <div>
-      {/* <BsHouseFill className="houseIcon" /> */}
-      <Widget/>
-      
-      <div className="MainCard">
-      <div className="card_comp">
-        <MDBCard >
-          <MDBCardBody>
-            <img
-              className="Card_compImg"
-              src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
-              alt=""
-            />
-            <div className="cardContent">
-              <MDBCardTitle className="title">Anna Thomas</MDBCardTitle>
-              <MDBCardText>16 years, Los Angeles</MDBCardText>
-              <MDBCardText>
-                “Working part-time as a dog walker for more than 2 years ”
-              </MDBCardText>
-            </div>
-            <MDBCardText className="price">Price: 10$/per hour</MDBCardText>
-            <MDBCardText className="star">
-              <BsStarFill />
-              <BsStarFill />
-              <BsStarFill />
-              <BsStarFill />
-              <BsStar />
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </div>
-      <div className="card_comp">
-        <MDBCard className="boxshadow">
-          <MDBCardBody>
-            <img
-              className="Card_compImg"
-              src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
-              alt=""
-            />
-            <div className="cardContent">
-              <MDBCardTitle className="title">Anna Thomas</MDBCardTitle>
-              <MDBCardText>16 years, Los Angeles</MDBCardText>
-              <MDBCardText>
-                “Working part-time as a dog walker for more than 2 years ”
-              </MDBCardText>
-            </div>
-            <MDBCardText className="price">Price: 10$/per hour</MDBCardText>
-            <MDBCardText className="star">
-              <BsStarFill />
-              <BsStarFill />
-              <BsStarFill />
-              <BsStarFill />
-              <BsStar />
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </div>
-
-      <div></div>
-
-        </div>
   
-    </div>
-  );
+    return (
+      <div>
+        <Widget />
+
+        <div>
+          {
+            <ListingCardComponent
+              title="Anna Thomas"
+              tag="Working as a dog walker since 2 years and can manage efficiently"
+              age="Los Angeles, 26 years old"
+              price="10$/hour"
+            />
+          }
+
+          {
+            <ListingCardComponent
+              title="Vivek Sharma"
+              tag="Working as a dog walker since 2 years and can manage efficiently"
+              age="Los Angeles, 16 years old"
+              price="10$/hour"
+            />
+          }
+
+          {/* {<BsHouseFill className="houseIcon" />} */}
+        </div>
+      </div>
+    );
+  
 };
 
 export default Listing;
