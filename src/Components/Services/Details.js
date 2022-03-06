@@ -7,19 +7,15 @@ import Butt from '../Button/Butt.js'
 
 const Details = () => {
     return (
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div className="left">
-                       
-
-                    </div>
-
+        <div className="content">
+         
+                <div>
+                    
                 </div>
 
 
 
-                <div class="col-5">
+             
                     <div className="center_div">
                         <h4>General Details</h4>
                         <h5>What is to be done?</h5>
@@ -27,7 +23,7 @@ const Details = () => {
                         <br></br>
                         <br></br>
                         <h5>Describe your order in detail</h5>
-                        <Textareacomponent value="eg: Kindly get your own tools bitte"></Textareacomponent>
+                        <Textareacomponent placeholder="eg: Get your own tools bitte"></Textareacomponent>
                         <br></br>
                         <h5>Add images</h5>
 
@@ -40,18 +36,18 @@ const Details = () => {
                         </label>
 
                         <div className='Btn_next_div'>
-                            <Butt value="NEXT"> </Butt>
+                            <Butt nameofbtn="NEXT" style={{width:"80px", height:"40px" }}> </Butt>
                         </div>
 
 
                     </div>
-                </div>
+                
 
-            </div>
+           
 
 
 
-            <div class="col">
+           
                 <div className="right_div">
                     <div className="Freelancersinfo_Div">
                         <div className='imagebox'>
@@ -121,7 +117,6 @@ const Details = () => {
             </div>
 
 
-        </div>
 
     
     )

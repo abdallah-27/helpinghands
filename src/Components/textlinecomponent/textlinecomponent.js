@@ -1,8 +1,10 @@
 import './textlinecomponent.css';
 
-const Textlinecomponent =() => {
+const Textlinecomponent =(props) => {
+    let {value, addAddress,id } = props
 return(
-    <input type="text" id="Whatstobedone_input" className="text-line" ></input>
+    <input type="text" id={id}  className="text-line" value={value} 
+    onChange={(e) => addAddress(e)}></input>
 )
 }
 

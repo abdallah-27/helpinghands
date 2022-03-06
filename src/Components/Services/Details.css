@@ -1,10 +1,11 @@
-.container{
-  margin-left: 50%;
-}
-.left{
-  border: 1px solid black;
-  height:500px;
-}
+.content{
+  display: flex;
+  flex-direction: row;
+   max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    margin-left: 333px;
+    margin-top: -450px;}
 
 .center_div{
 width: 450px;
@@ -12,7 +13,8 @@ height: 450px;
 border: 1px solid black;
 padding: 3%;
 background-color: #f6f7eb;
-/* margin-left: -7% */
+margin-right: 4px;
+
 
 }
 
@@ -32,7 +34,7 @@ padding: 9px;
 }
 
 
-.line {
+.text-line {
   width: 380px;
 }
 
@@ -221,6 +223,8 @@ color: #44bba4;
  
   .Btn_next_div{
   margin-top: 20%;
-    margin-left: 40%;}
+  margin-left: 25%;}
 
-    
+    .bttn{
+    width: 80px;
+    }

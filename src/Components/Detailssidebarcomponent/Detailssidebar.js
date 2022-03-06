@@ -19,7 +19,7 @@ import MenuList from '@material-ui/core/MenuList';
 
 
 const Detailssidebar = () => {
-
+ 
     const history = useHistory();
     useEffect(() => {
         console.log("Componented about mounted");
@@ -27,13 +27,11 @@ const Detailssidebar = () => {
         history.push("/details/generaldetails");
 
 
-    }, [])
+    }, []) 
     return (
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div className="left_div">
+      
+                    <div>
                         <nav className="Details_nav">
                             <div className="GD_div">
                                 <div className="aa">
@@ -72,17 +70,7 @@ const Detailssidebar = () => {
                             <Route path="/details/payment" component={Payment}></Route>
                         </Switch>
                     </div>
-                </div>
-
-                <div class="col-5">
-
-                </div>
-                
-                <div class="col">
-
-                </div>
-            </div>
-        </div>
+           
 
 
 
