@@ -6,64 +6,7 @@ import styles from "./Filter.css";
 import data from "../../data";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {DropdownButton,Dropdown} from 'react-bootstrap'
-// const Filter = () => {
-//   const [filter, setFilter] = useState([]);
 
-//   useEffect(() => {}, []);
-
-//   return (
-//       <nav>
-//         <Dropdown>
-//             <Dropdown.Toggle variant="success" id="dropdown-basic">
-//                 Location
-//             </Dropdown.Toggle>
-
-//             <Dropdown.Menu>
-//                 <Dropdown.Item>Another action</Dropdown.Item>
-//                 <Dropdown.Item>Action</Dropdown.Item>
-//                 <Dropdown.Item>Something else</Dropdown.Item>
-//             </Dropdown.Menu>
-//         </Dropdown>
-
-//         <Dropdown>
-//             <Dropdown.Toggle variant="success" id="dropdown-basic">
-//                 Categories
-//             </Dropdown.Toggle>
-
-//             <Dropdown.Menu>
-//                 <Dropdown.Item>Action</Dropdown.Item>
-//                 <Dropdown.Item>Another action</Dropdown.Item>
-//                 <Dropdown.Item>Something else</Dropdown.Item>
-//             </Dropdown.Menu>
-//         </Dropdown>
-
-//         <Dropdown>
-//             <Dropdown.Toggle variant="success" id="dropdown-basic">
-//                 Price range
-//             </Dropdown.Toggle>
-
-//             <Dropdown.Menu>
-//                 <Dropdown.Item>Action</Dropdown.Item>
-//                 <Dropdown.Item>Another action</Dropdown.Item>
-//                 <Dropdown.Item>Something else</Dropdown.Item>
-//             </Dropdown.Menu>
-//         </Dropdown>
-
-//         <Dropdown>
-//             <Dropdown.Toggle variant="success" id="dropdown-basic">
-//                 Review
-//             </Dropdown.Toggle>
-
-//             <Dropdown.Menu>
-//                 <Dropdown.Item>Action</Dropdown.Item>
-//                 <Dropdown.Item>Another action</Dropdown.Item>
-//                 <Dropdown.Item>Something else</Dropdown.Item>
-//             </Dropdown.Menu>
-//         </Dropdown>
-
-//       </nav>
-//   );
-// };
 class Filter extends React.Component
 {
     filter = {
