@@ -1,6 +1,6 @@
     .sidebar {
         background-color: #44BBA4;
-        width: 300px;
+        width: 280px;
         height: 80vh;
         font-size: 26px;
         margin-top: 2%;
@@ -8,4 +8,9 @@
         margin-left: 2%;
         color: white;
         gap: 5%;
+    }
+    
+    .filter {
+        font-size: 25px;
+        padding-top: 1rem;
     }

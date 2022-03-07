@@ -25,15 +25,17 @@ const Listing = () => {
   
     return (
       <div>
-        <Widget />
+         <div className="results"><h3>Results for dog-walking</h3></div>
+         <Widget />
+       
 
-        <div>
+        <div className="CardPosition">
           {
             <ListingCardComponent
               title="Anna Thomas"
               tag="Working as a dog walker since 2 years and can manage efficiently"
               age="Los Angeles, 26 years old"
-              price="10$/hour"
+              price="Price : 10$/hour"
             />
           }
 
@@ -42,7 +44,7 @@ const Listing = () => {
               title="Vivek Sharma"
               tag="Working as a dog walker since 2 years and can manage efficiently"
               age="Los Angeles, 16 years old"
-              price="10$/hour"
+              price="Price : 10$/hour"
             />
           }
 

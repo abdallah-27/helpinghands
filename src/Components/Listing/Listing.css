@@ -1,59 +1,22 @@
-    .card_comp {
-        border-radius: 1rem;
-        padding-bottom: 30px;
-        padding-right: -4%;
-        padding-top: -70rem;
-        margin-top: 2%;
-        background-color: #44BBA4;
-        width: 50%;
-        height: 30vh;
-        margin-left: 40%;
-    }
-    
-    .Card_compImg {
-        margin-right: 1%;
-        border-radius: 100%;
-        margin-left: -60%;
-        margin-top: 3%;
-        height: 12rem;
-    }
-    
-    .cardContent {
-        margin-top: -26%;
-        margin-left: 40%;
-        font-size: 16px;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        color: white;
-        line-height: 3%;
-        font-weight: 100;
-    }
-    
-    .price {
-        margin-left: 15%;
-        margin-top: 4%;
-        color: white;
-    }
-    
-    .star {
-        color: white;
-        margin-left: 50%;
-        margin-top: -4%;
-    }
-    
-    .title {
-        margin-bottom: 2%;
-        font-size: 22px;
-    }
-    
-    .MainCard {
-        margin-top: -35%;
-        margin-left: -10%;
-    }
-    
-    .houseIcon {
-        color: black;
-        margin-bottom: -2%;
-        height: 15px;
-    }
+.price {
+    margin-left: 15%;
+    margin-top: 4%;
+    color: white;
+}
+
+.houseIcon {
+    color: black;
+    margin-bottom: -2%;
+    height: 15px;
+}
+
+.CardPosition {
+    margin-top: 22%;
+    margin-left: -6%;
+}
+
+.results {
+    font-weight: 500;
+    margin-left: -35%;
+    margin-bottom: -4%;
+}

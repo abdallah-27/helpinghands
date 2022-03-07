@@ -10,6 +10,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import UserProfileComponent from "../userProfile/UserProfileComponent";
 import SimpleTabs from "../TabComponent/TabComponent";
+import Detailssidebar from "../Detailssidebarcomponent/Detailssidebar";
 
 const UserProfile = () => {
   const location = useLocation();
@@ -17,12 +18,17 @@ const UserProfile = () => {
   console.log(location.state);
 
 
+  
+
 
   if(location.state == null){
     console.log("inside else");
     return (
       
       <div>
+        <div>
+    <Detailssidebar/>
+  </div>
         <div className="Tabdiv">
           
           <SimpleTabs
@@ -42,6 +48,9 @@ const UserProfile = () => {
   } else if (location.state.data == "loggeduser") {
     return (
       <div>
+        <div>
+    <Detailssidebar/>
+  </div>
         <div className="Tabdiv">
           <SimpleTabs
             one={
@@ -82,6 +91,9 @@ const UserProfile = () => {
   } else if ((location.state.data =="loggeduserNoApp")) {
     return (
       <div>
+        <div>
+    <Detailssidebar/>
+  </div>
         <div className="Tabdiv">
           <SimpleTabs
             one={

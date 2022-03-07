@@ -63,7 +63,7 @@ class Widget extends React.Component {
     render() {
         return ( 
         < div className='sidebar' >
-            <h3>Filter</h3>
+            <h3 className='filter' >Filter</h3>
             <CheckboxTree nodes = { nodes }
             checked = { this.state.checked1 }
             expanded = { this.state.expanded1 }
