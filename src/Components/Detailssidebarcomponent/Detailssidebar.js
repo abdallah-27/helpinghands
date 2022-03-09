@@ -7,14 +7,14 @@ import Details from "../Services/Details.js";
 import { useEffect } from "react";
 import './Detailssidebar.css';
 import Dummy from "./dummy";
+import Chat from '../ChatComponent/Chat'
 import {
     MdFormatAlignJustify, MdPostAdd, MdAddLocationAlt, MdLocalSee,
     MdFmdGood, MdVerified, MdLibraryAdd, MdWallpaper, MdInsertPhoto,
-    MdInsertInvitation, MdOutlineSubtitles, MdCreditCard
+    MdInsertInvitation, MdOutlineSubtitles, MdCreditCard,MdChat
 } from "react-icons/md";
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
-
 
 
 
@@ -60,6 +60,17 @@ const Detailssidebar = () => {
 
                             </div>
 
+                            <div >
+                                <div className="chat_div" >
+                                    
+                                    <NavLink  to="/details/chat"><MdChat className="Chat_icon" /></NavLink>
+                                    <div className="Text_chat" >
+                                    <p>Do you want to discuss more about the service? Chat to the Service Provider</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
 
                         </nav>
 
@@ -68,8 +79,14 @@ const Detailssidebar = () => {
                             <Route path="/details/address" component={Address}></Route>
                             <Route path="/details/datetime" component={DateTime}></Route>
                             <Route path="/details/payment" component={Payment}></Route>
+                            <Route path="/details/chat" component={Chat}></Route>
                         </Switch>
+
+                       
                     </div>
+
+                 
+                    
            
 
 
