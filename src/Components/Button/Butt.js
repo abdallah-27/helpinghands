@@ -1,8 +1,11 @@
-import './Butt.css';
+import './Butt.css'
 
 const Butt = (props) =>{
-return(<div>
-    <button>{props.value}</button>
+    let {nameofbtn, buttonPress, addressarray }=props
+    console.log(`${buttonPress} Buuton`)
+return(
+<div>
+    <button className='bttn' onClick={() => buttonPress()}>{nameofbtn} </button>
 </div>)
 }
 

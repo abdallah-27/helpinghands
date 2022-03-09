@@ -1,7 +1,6 @@
-button{
+.bttn{
     background-color: #44bba4;
-    width: 80px;
-    height: 40px;
+    
     border: none;
     color: white;
 }

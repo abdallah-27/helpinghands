@@ -1,230 +1,228 @@
-.content{
-  display: flex;
-  flex-direction: row;
-   max-width: 960px;
-    margin: 0 auto;
+.content{  /*the sidebar is not in content*/
     display: flex;
-    margin-left: 333px;
-    margin-top: -450px;}
+    flex-direction: row;
+    margin-left: 360px;
+    margin-top: -450px;
+    }
 
-.center_div{
+
+  .center_div{
 width: 450px;
 height: 450px;
-border: 1px solid black;
-padding: 3%;
-background-color: #f6f7eb;
+margin-left: 2%;
+background-color: #FCF8E8;
 margin-right: 4px;
-
-
-}
-
-.Details_nav{
-display: flex;
-flex-direction: column;
-}
-
-
-.right_div{
-width: 250px;
-height: 450px;
-border: 1px solid #393e41;
-background-color: #f6f7eb;
-padding: 9px;
-/* margin-left: -58%; */
-}
-
+border: 1px solid #cccccc;
+box-shadow: 1px 1px #cccccc ;
+border-radius: 2%;
+padding: 2px;}
 
 .text-line {
-  width: 380px;
-}
-
-textarea {
-  width: 90%;
-  height: 100px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 16px;
-  resize: none;
+    width: 380px;
   }
 
-  .Freelancersinfo_Div{
-    width: 230px;
-    height: 150px;
-    border: 1px solid black;
-  }
-
-  input[type="file"]{
-    display: none;
-
-  }
-
-  .label{
-   
-    height: 50px;
-    width: 50px;
-    
-    position: absolute;
-    font-size: 30px;
-    display: flex;
-     justify-content: center;
-     align-items: center;
-  }
-
-  .addpht_icon{
-color: #44bba4;
-  }
-  .imagebox{
-    padding: 2px;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-right: 5px;
-    border: 1px solid black;
-    width:  80px;
-    height: 80px;
-  }
-
-  .freelanc_info{
-    padding: 2px;
-    margin-left: 5px;
-    margin-top: 5px;
-   
-    width:  217px;
-    height: 55px;
-  }
- 
-
-  .freelance-information{
-   
-    width:  135px;
-    height: 80px;
-    margin-left: 40%;
-    margin-top: -35%;
-  }
-
-  .name{
-    font-size: medium;
-  }
-
-  .star_rating{
-    margin-right: 1%;
-    color: gold;
-    margin-top: -3%;
-    font-size: 25px;
-  }
-
-
-  .verified{
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-    
-    height: 45px;
-    margin-top: 2%;
-    width: 230px;
-    
-  }
-
-
-  .verification_icon{
-    color: gold;
-    margin-right: 3%;
-    margin-top: 4%;
-    margin-left: 5%;
-    font-size: 25px;
-  }
-
-  .label_ID{
-    font-size: large;
-  }
-  .Id_div{
-    margin-left: 1%;
-    margin-top: 3%;
-  }
-
-  .Ratingreview_div{
-    width: 230px;
-    height: 230px;
-    border: 1px solid black;
-    margin-top: 2%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .Title_div{
-   margin-left: 7%;
-  }
-
-  .label_Review{
-    font-size: large;
-  }
-
-  .Photo_Reviewtitle_div{
-    display: flex;
-    flex-direction: row;
-  }
-
-  .user_photo{
-   
   
-    margin-left: 5%;
-    margin-top: 2%;
-  }
-
-  .pht_user{
-    border-radius: 50%; 
-    width: 50px;
-    height: 50px;
-
-  }
-
-  .Review_title{
-   
-    width: 68%;
-    margin-left: 2%;
-    height: 50%;
-    margin-top: 2%;
-  }
-
-  .reviewinwords{
-   
-    width: 150px;
-    height: 30px;
-    margin-left: 30%;
-    margin-top: -11%;
-  }
-
-  .reviewinwordsandstars{
-   
-    width: 225px;
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    
-  }
-
-  .star1{
-    color: gold;
-    font-size: 20px;
-  }
-
-  .star_div{
-    display: flex;
-    flex-direction: row;
-    margin-left: 5%;
-  }
-
-  .line2_reviewwords{
-    margin-left: 6%;
-}
-
- 
-  .Btn_next_div{
-  margin-top: 20%;
-  margin-left: 25%;}
-
-    .bttn{
-    width: 80px;
+textarea {
+    width: 90%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
     }
+
+
+    input[type="file"]{
+        display: none;
+    
+      }
+    
+      .label{
+       
+        height: 50px;
+        width: 50px;
+        
+        position: absolute;
+        font-size: 30px;
+        display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+
+
+
+    .Freelancersinfo_Div{
+        width: 230px;
+        height: 150px;
+        border: 1px solid #cccccc;
+        box-shadow: 1px 1px #cccccc ;
+        border-radius: 3%;
+        background-color: #FCF8E8;
+      }
+
+      .addpht_icon{
+        color: #44bba4;
+       } 
+
+       .imagebox{
+        padding: 2px;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-right: 5px;
+        border: 1px solid black;
+        width:  80px;
+        height: 80px;
+      }
+
+      
+      .freelanc_info{
+        padding: 2px;
+        margin-left: 5px;
+        margin-top: 5px;
+       
+        width:  217px;
+        height: 55px;
+      }
+ 
+      .freelance-information{
+   
+        width:  135px;
+        height: 80px;
+        margin-left: 40%;
+        margin-top: -35%;
+      }
+
+      .name{
+        font-size: medium;
+      }
+
+      .star_rating{
+        margin-right: 1%;
+        color: gold;
+        margin-top: -3%;
+        font-size: 25px;
+      }
+    
+    
+      .verified{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #cccccc;
+        box-shadow: 1px 1px  #cccccc ;
+        border-radius: 3%;
+        height: 45px;
+        margin-top: 2%;
+        width: 230px;
+        background-color: #FCF8E8;
+        
+      }
+    
+    
+      .verification_icon{
+        color: gold;
+        margin-right: 3%;
+        margin-top: 4%;
+        margin-left: 5%;
+        font-size: 25px;
+      }
+    
+      .label_ID{
+        font-size: large;
+      }
+      .Id_div{
+        margin-left: 1%;
+        margin-top: 3%;
+      }
+    
+      .Ratingreview_div{
+        width: 230px;
+        height: 230px;
+        border: 1px solid #b1b4b4;
+        box-shadow: 1px 1px  #cccccc ;
+        border-radius: 3%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        background-color: #FCF8E8;
+      }
+    
+      .Title_div{
+       margin-left: 7%;
+      }
+    
+      .label_Review{
+        font-size: large;
+      }
+    
+      .Photo_Reviewtitle_div{
+        display: flex;
+        flex-direction: row;
+      }
+    
+      .user_photo{
+       
+      
+        margin-left: 5%;
+        margin-top: 2%;
+      }
+    
+      .pht_user{
+        border-radius: 50%; 
+        width: 50px;
+        height: 50px;
+    
+      }
+    
+      .Review_title{
+       
+        width: 68%;
+        margin-left: 2%;
+        height: 50%;
+        margin-top: 2%;
+      }
+    
+      .reviewinwords{
+       
+        width: 150px;
+        height: 30px;
+        margin-left: 30%;
+        margin-top: -11%;
+      }
+    
+      .reviewinwordsandstars{
+       
+        width: 225px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        
+      }
+    
+      .star1{
+        color: gold;
+        font-size: 20px;
+      }
+    
+      .star_div{
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+      }
+    
+      .line2_reviewwords{
+        margin-left: 6%;
+    }
+    
+     
+      .Btn_next_div{
+      margin-top: 20%;
+      margin-left: 25%;}
+    
+        .bttn{
+        width: 80px;
+        }
+    

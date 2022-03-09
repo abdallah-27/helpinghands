@@ -5,22 +5,18 @@ import { NavLink, Route, Switch } from "react-router-dom"
 import Details from "./Components/Services/Details.js"
 import UserProfile from "./Components/userProfile/userProfile.js"
 import Detailssidebar from './Components/Detailssidebarcomponent/Detailssidebar';
-
+import Header from './Components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-    <nav className='App_nav'>
-    <h1>Helping Hands</h1>
-    <NavLink to="/details" exact>Card Componenet</NavLink>
-    
-    
-    <NavLink to="/" exact>Home</NavLink>
-    </nav>
-    <Switch>
-       <Route path="/details" component = {Detailssidebar}/>
-      <Route path ="/" exact component={Home}/>
-    </Switch>
+    <div className='App_nav'>
+      <Header></Header>
+    </div>
+    <div className='Home_div'>
+     {/* <Home></Home> */}
+    </div>
+
 
   
     </div>
