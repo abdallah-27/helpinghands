@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #eee;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#form {
+  background: #44bba4;
+  max-width: 500px;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+#form input,
+#form select {
+  margin: 1rem 0;
+  padding: 0.75rem 0.25rem;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+}
+
+#form h3 {
+  color:rgb(252, 252, 252);
+  /* font-size: .90rem; */
+  /* display: flex; */
+}
+#form h2 {
+  color:rgb(252, 252, 252);
+  font-weight: bold;
+}
+
+.mt {
+  margin-top: 8rem;
+}
+
+#form .input-container {
+  position: relative;
+  font-size: 1rem;
+  color: #333;
+}
+
+#form .input-grp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+
+#form button {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  margin-top: 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  background-color: #060a24;
+  color: #FFF;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 9;
+}
+
+#form button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #3b2dd2fa;
+  z-index: -1;
+}
+
+#form button:hover:before {
+  width: 100%;
+  transition: .2s all;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    top: -150px;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+#card .logo {
+  max-width: 01px;
+}
+
+.FormLabel{
+  display: flex;
+}
+.title{
+  margin-bottom: 20%;
+}

@@ -2,8 +2,6 @@ import React, { useState } from "react";
 // import data from './data';
 import data from "../../data";
 import Filter from "../Filter/Filter";
-import 'react-chat-elements/dist/main.css';
-import { Popup } from 'react-chat-elements'
 
 const Home = () => {
 
@@ -26,10 +24,10 @@ const Home = () => {
 
                     <div className="col-12 mb-5">
                         <div className="mb-3 col-4 mx-auto text-center">
-                            <label className="form-label h4">Helping Hands</label>
+                            <label className="position form-label h4">Helping Hands</label>
                             <input
                             type="text"
-                            placeholder="Search for services"
+                            placeholder="Search for more services"
                             className="form-control"
                             value={filter}
                             onChange ={searchText.bind(this)}/>
@@ -56,5 +54,5 @@ const Home = () => {
              </div>  
         
     )
-    }
+}
     export default Home 
