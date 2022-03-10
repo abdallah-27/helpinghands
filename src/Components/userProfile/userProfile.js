@@ -16,18 +16,14 @@ const UserProfile = () => {
   const location = useLocation();
   console.log(location);
   console.log(location.state);
-
-
-  
-
-
+  //console.log(location.state.data);
   if(location.state == null){
     console.log("inside else");
     return (
       
       <div>
         <div>
-    <Detailssidebar/>
+    {/* <Detailssidebar/> */}
   </div>
         <div className="Tabdiv">
           
@@ -49,9 +45,10 @@ const UserProfile = () => {
     return (
       <div>
         <div>
-    <Detailssidebar/>
+        {/* <Detailssidebar/> */}
   </div>
         <div className="Tabdiv">
+      
           <SimpleTabs
             one={
               <div className="postLine">
@@ -92,7 +89,7 @@ const UserProfile = () => {
     return (
       <div>
         <div>
-    <Detailssidebar/>
+    {/* <Detailssidebar/> */}
   </div>
         <div className="Tabdiv">
           <SimpleTabs

@@ -13,6 +13,7 @@
         "mdb-react-ui-kit": "^2.4.0",
         "react": "^17.0.2",
         "react-bootstrap": "^2.2.0",
+        "react-chat-elements": "^10.16.2",
         "react-checkbox-tree": "^1.7.2",
         "react-dom": "^17.0.2",
         "react-icons": "^4.3.1",

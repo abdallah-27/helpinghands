@@ -9,9 +9,9 @@ const MyDetails = (props) => {
 
     return (
        
-        <div>
+<div className="backCard">
 
-     <div className="backCard">Hello</div>
+     <div >Hello</div>
             <div className="container ">
                 <div className="container col-md-10 ">
                     <h2 className="text-center">Edit Profile</h2>

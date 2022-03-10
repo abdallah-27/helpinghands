@@ -1,0 +1,60 @@
+.content_address {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.writeaddress_div {
+    border: 1px solid #FCF8E8;
+    padding: 1%;
+    background-color: #FCF8E8;
+    margin-right: 4px;
+    ;
+}
+
+.innerAddress_div {
+    border: 1px solid #FCF8E8;
+    height: 360px;
+    padding: 10px;
+}
+
+.txtarea {
+    height: 70px;
+}
+
+.Btn_div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.bttn {
+    margin-left: 25px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.text-line {
+    width: 290px;
+}
+
+.rightaddress_div {
+    width: 250px;
+    height: 450px;
+    border: 1px solid #f6f7eb;
+    padding: 9px;
+}
+
+.radio_div {
+    display: flex;
+    flex-direction: row;
+}
+
+.card_address {
+    border: 1px solid #44bba4;
+    width: 180px;
+    height: 150px;
+    margin-left: 12px;
+    background-color: #FCF8E8;
+}

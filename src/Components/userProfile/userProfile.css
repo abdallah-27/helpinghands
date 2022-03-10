@@ -1,4 +1,4 @@
-.card_comp {
+.card_comp2 {
     border-radius: 1rem;
     padding-bottom: 30px;
     padding-right: -4%;
@@ -13,7 +13,8 @@
 .Tabdiv {}
 
 .postLine {
-    margin-top: 54%;
+    margin-top: 60%;
+    margin-right: -3%;
 }
 
 .postLineDone {
@@ -24,15 +25,15 @@
     margin-top: -50%;
 }
 
-.Card_compImg {
+.Card_compImg2 {
     margin-right: 1%;
     border-radius: 100%;
     margin-left: -60%;
     margin-top: 3%;
-    height: 12rem;
+    height: 8rem;
 }
 
-.cardContent {
+.cardContent2 {
     margin-top: -26%;
     margin-left: 40%;
     font-size: 16px;
@@ -44,7 +45,7 @@
     font-weight: 100;
 }
 
-.price {
+.price2 {
     margin-left: 15%;
     margin-top: 4%;
     color: white;
@@ -56,13 +57,13 @@
     margin-top: -4%;
 }
 
-.title {
+.title2 {
     margin-bottom: 2%;
     font-size: 22px;
 }
 
-.MainCard {
-    margin-top: -35%;
+.MainCard2 {
+    margin-top: -38%;
     margin-left: -10%;
 }
 

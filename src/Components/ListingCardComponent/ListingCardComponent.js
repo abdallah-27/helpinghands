@@ -8,13 +8,18 @@ import {
 } from "mdb-react-ui-kit";
 import "./ListingCardComponent.css";
 import { BsStarFill, BsStar, BsArrowRight, BsHouseFill } from "react-icons/bs";
+import { NavLink, Link } from "react-router-dom";
+import { Button } from "bootstrap";
 
 const ListingCardComponent = ({title, tag, age, price}) => {
   return (
     <div>
+  
       <div className="MainCard">
-        <div className="card_comp">
-          <MDBCard>
+        <div>
+        <Link to="/details">
+          <MDBCard className="card_comp">
+        
             <MDBCardBody className="CardImg">
             <img className="Card_compImg"
                 src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
@@ -38,9 +43,12 @@ const ListingCardComponent = ({title, tag, age, price}) => {
               </MDBCardText>
               </div>
             </MDBCardBody>
+          
           </MDBCard>
+          </Link>
         </div>
       </div>
+     
     </div>
   );
 };

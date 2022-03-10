@@ -1,0 +1,6 @@
+nav {
+    display: inline-flex;
+    gap: 130px;
+    align-items: center;
+    top: 20px;
+}

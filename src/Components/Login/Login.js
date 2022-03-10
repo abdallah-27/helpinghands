@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { render } from "react-dom";
 import { useNavigate } from "react-router-dom";
+
 import UserProfile from "../userProfile/UserProfile";
+import './Login.css'
 
 const Login = () => {
   const navigate = useNavigate();
@@ -17,24 +19,24 @@ const Login = () => {
       setEmaillog("abc");
       setPasswordlog("password");
      
-      navigate("/UserProfile", { state: { data: "loggeduser" } });
+      navigate("/Home", { state: { data: "loggeduser" } });
     } else if (
       (emaillog == "bcd" && passwordlog == "123") ||
       (emaillog == "pranali" && passwordlog == "shirsat")
     ) {
       setEmaillog("bcd");
       setPasswordlog("123");
-      navigate("/UserProfile", { state: { data: "loggeduserNoApp" } });
+      navigate("/Home", { state: { data: "loggeduserNoApp" } });
     }
   };
 
   return (
     <div>
       <div className="LoginContainer">
-        <form id="reg-login" className="LoginContainer">
+        <form id="reg-login">
           <h3
-          className="fw-normal mb-3 pb-3 "
-          style={{ fontSize: "3rem", marginTop: "5rem", textAlign: "center" }}
+          className="loginHeading"
+          style={{ fontSize: "2rem", marginTop: "5rem", textAlign: "center" }}
           >
             Login
           </h3>
@@ -74,6 +76,8 @@ const Login = () => {
           <br></br>
         </form>
       </div>
+
+      <img src="" />
     </div>
   );
 };

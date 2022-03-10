@@ -1,41 +1,64 @@
 .card_comp {
-    border-radius: 1rem;
+    /* border-radius: 1rem;
     padding-bottom: 40px;
     padding-right: -4%;
     padding-top: -70rem;
-    background-color: #44BBA4;
     margin-left: 40%;
     width: 60%;
-    height: 30vh;
+    height: 30vh; */
+    border-radius: 1rem;
+    padding-bottom: 30px;
+    padding-right: -4%;
+    padding-top: -70rem;
+    margin-top: 2%;
+    background-color: #44BBA4;
+    width: 50%;
+    height: 28vh;
+    margin-left: 40%;
 }
 
 .Card_compImg {
-    margin-right: 0%;
+    /* margin-right: 0%;
     border-radius: 100%;
     margin-left: -40%;
     margin-top: 3%;
-    height: 12px;
+    height: 4px; */
+    margin-right: 1%;
+    border-radius: 100%;
+    margin-left: -60%;
+    margin-top: 3%;
+    height: 8rem;
 }
 
-.CardImg {
+
+/* .CardImg {
     margin-left: -2%;
     margin-bottom: 2%;
     padding-bottom: 1rem;
-}
+} */
 
 .age {
     margin-left: -5%;
 }
 
 .cardContent {
-    margin-top: -26%;
+    /* margin-top: -26%;
     margin-left: -10%;
     font-size: 18px;
     display: flex;
     flex-direction: column;
     text-align: left;
+    color: black;
+    line-height: 3%; */
+    margin-top: -26%;
+    margin-left: 40%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     color: white;
     line-height: 3%;
+    font-weight: 100;
 }
 
 .price {
@@ -58,9 +81,11 @@
 }
 
 .MainCard {
-    margin-top: -30%;
+    /* margin-top: -30%;
     margin-left: -30%;
-    height: 40vh;
+   */
+    margin-top: -28%;
+    margin-left: -10%;
 }
 
 .houseIcon {

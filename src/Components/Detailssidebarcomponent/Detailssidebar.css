@@ -1,4 +1,6 @@
 .left_div {
+    display: flex;
+    flex-direction: column;
     width: 240px;
     border: 1px solid black;
     height: 450px;
@@ -7,8 +9,14 @@
 }
 
 .GD_div {
-    padding: 15px;
+    /* padding: 15px; */
     border-bottom: 1px solid white;
+}
+
+.Details_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .aa {
@@ -21,6 +29,6 @@
 }
 
 .iconofdetail {
-    margin-left: 35px;
-    margin-right: 10px;
+    /* margin-left: 35px;
+    margin-right: 10px; */
 }

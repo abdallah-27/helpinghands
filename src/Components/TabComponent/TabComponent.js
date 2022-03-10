@@ -57,8 +57,8 @@ export default function SimpleTabs({one, two}) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Tabs style={{backgroundColor:"#44BBA4"}} value={value} onChange={handleChange} aria-label="simple tabs example">
+      <AppBar style={{marginLeft: "35%", width: "60%" , backgroundColor:"#44BBA4"}} position="static">
+        <Tabs style={{ width: "50%" , backgroundColor:"#44BBA4"}} value={value} onChange={handleChange} aria-label="simple tabs example">
           <Tab label="Current Appointments" {...a11yProps(0)} />
           <Tab label="Previous Appointments" {...a11yProps(1)} />
           

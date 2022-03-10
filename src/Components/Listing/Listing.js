@@ -21,7 +21,7 @@ import Widget from "../FilterBarComponent/widget";
 import ListingCardComponent from "../ListingCardComponent/ListingCardComponent";
 import UserProfileComponent from "../userProfile/UserProfileComponent";
 
-const Listing = () => {
+const Listing = (props) => {
   
     return (
       <div>
@@ -40,6 +40,14 @@ const Listing = () => {
           }
 
           {
+            <ListingCardComponent
+              title="Vivek Sharma"
+              tag="Working as a dog walker since 2 years and can manage efficiently"
+              age="Los Angeles, 16 years old"
+              price="Price : 10$/hour"
+            />
+          }
+                    {
             <ListingCardComponent
               title="Vivek Sharma"
               tag="Working as a dog walker since 2 years and can manage efficiently"
