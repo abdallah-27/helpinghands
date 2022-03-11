@@ -3,6 +3,8 @@ import './Payment.css';
 
 import PaymentData from "./PaymentData.json"
 
+
+
 function PaymentReceipt() {
     return(
         <div className="container">
@@ -11,13 +13,11 @@ function PaymentReceipt() {
                     {PaymentData.map(post =>{
                         return(
                             <div key={post.id}>
-                            <h2 className="title">{post.title}</h2> 
+                            <h2 className="title">{post.username}</h2> 
                             <div className="row">
-                                <h3>Name: {post.firstName}</h3>
+                                <h3>Name: {post.username}</h3>
                             </div>
-                            <div className="row">
-                                <h3>Payment Type: {post.paymentType}</h3>
-                            </div>
+                            
                             <div className="row">
                                 <h3>Email: {post.email}</h3>
                             </div>

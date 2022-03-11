@@ -2,9 +2,14 @@
 
 [{
     
-    "paymentMethod": "",
-    "email": "", 
-    "serviceName": "",
-    "cardNumber": ""
+    "email": "a@g",
+    "month": "January",
+    "phone": 123,
+    "surname": "Gueye",
+    "username": "Amadou",
+    "year": "2025",
+    "zip": 69,
+    "amountPaid": 50,
+    "serviceName":"serviceName"
 }]
 
