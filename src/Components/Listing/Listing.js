@@ -25,7 +25,7 @@ const Listing = (props) => {
   
     return (
       <div>
-         <div className="results"><h3>Results for dog-walking</h3></div>
+         <div className="results"><h3>Results for your search</h3></div>
          <Widget />
        
 
@@ -36,6 +36,7 @@ const Listing = (props) => {
               tag="Working as a dog walker since 2 years and can manage efficiently"
               age="Los Angeles, 26 years old"
               price="Price : 10$/hour"
+              LicNo="AQ5468955564"
             />
           }
 
@@ -45,6 +46,7 @@ const Listing = (props) => {
               tag="Working as a dog walker since 2 years and can manage efficiently"
               age="Los Angeles, 16 years old"
               price="Price : 10$/hour"
+              LicNo="AQ5468955564"
             />
           }
                     {
@@ -53,6 +55,7 @@ const Listing = (props) => {
               tag="Working as a dog walker since 2 years and can manage efficiently"
               age="Los Angeles, 16 years old"
               price="Price : 10$/hour"
+              LicNo="AQ5468955564"
             />
           }
 

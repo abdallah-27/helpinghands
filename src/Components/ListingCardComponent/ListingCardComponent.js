@@ -11,13 +11,13 @@ import { BsStarFill, BsStar, BsArrowRight, BsHouseFill } from "react-icons/bs";
 import { NavLink, Link } from "react-router-dom";
 import { Button } from "bootstrap";
 
-const ListingCardComponent = ({title, tag, age, price}) => {
+const ListingCardComponent = ({title, tag, age, price, LicNo}) => {
   return (
     <div>
   
       <div className="MainCard">
         <div>
-        <Link to="/details">
+        <Link to="/details" style={{ textDecoration: 'none' }}>
           <MDBCard className="card_comp">
         
             <MDBCardBody className="CardImg">
@@ -30,8 +30,10 @@ const ListingCardComponent = ({title, tag, age, price}) => {
             
               
                 <MDBCardTitle className="title">Name: {title}</MDBCardTitle>
-                <MDBCardText className="tag">{tag}</MDBCardText>
+                
                 <MDBCardText className="age">{age}</MDBCardText>
+                <MDBCardText className="licno">{LicNo}</MDBCardText>
+                <MDBCardText className="tag">{tag}</MDBCardText>
              
               <MDBCardText className="price">{price}</MDBCardText>
               <MDBCardText className="star">

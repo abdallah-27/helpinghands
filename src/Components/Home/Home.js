@@ -10,6 +10,7 @@ import Listing from "../Listing/Listing";
 import UserProfile from "../userProfile/UserProfile";
 import Login from "../Login/Login"
 // import { Switch } from "@material-ui/core";
+import './Home.css'
 
 const Home = (props) => {
   const location = useLocation();
@@ -61,7 +62,7 @@ const Home = (props) => {
                         type="button"
                         className="btn btn-success" onClick={loginNav}>Login</button>  
                         
-      <section className="py-4 container">
+      <section className="py-4 container_home">
         <div className="row justify-content-center">
           <div className="col-12 mb-5">
             <div className="mb-3 col-4 mx-auto text-center">
