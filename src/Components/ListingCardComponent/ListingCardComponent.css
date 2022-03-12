@@ -17,6 +17,10 @@
     margin-left: 40%;
 }
 
+.CardPosition {
+    margin-top: 0%;
+}
+
 .Card_compImg {
     /* margin-right: 0%;
     border-radius: 100%;
@@ -25,9 +29,9 @@
     height: 4px; */
     margin-right: 1%;
     border-radius: 100%;
-    margin-left: -60%;
-    margin-top: 3%;
-    height: 8rem;
+    margin-left: -70%;
+    margin-top: 1%;
+    height: 10rem;
 }
 
 
@@ -38,7 +42,13 @@
 } */
 
 .age {
-    margin-left: -5%;
+    margin-left: -6%;
+    padding: 4px;
+}
+
+.licno {
+    margin-left: -6%;
+    padding: 4px;
 }
 
 .cardContent {
@@ -50,8 +60,8 @@
     text-align: left;
     color: black;
     line-height: 3%; */
-    margin-top: -26%;
-    margin-left: 40%;
+    margin-top: -24%;
+    margin-left: 30%;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -62,14 +72,14 @@
 }
 
 .price {
-    margin-left: 15%;
+    margin-left: 25%;
     margin-top: 4%;
     color: white;
 }
 
 .star {
     color: white;
-    margin-left: 50%;
+    margin-left: 55%;
     margin-top: -4%;
 }
 
@@ -84,7 +94,7 @@
     /* margin-top: -30%;
     margin-left: -30%;
    */
-    margin-top: -28%;
+    margin-top: -1%;
     margin-left: -10%;
 }
 

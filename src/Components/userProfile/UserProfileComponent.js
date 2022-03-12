@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./userProfile.css";
+import "./UserProfile.css";
 import {
   MDBCard,
   MDBCardBody,
@@ -11,8 +11,8 @@ const UserProfileComponent = ({ Pname, Reviews, Status, Delete }) => {
   return (
     <div>
       <div className="MainCard2">
-        <div className="card_comp2">
-          <MDBCard>
+       
+          <MDBCard className="card_comp2"> 
             <MDBCardBody>
               <img
                 className="Card_compImg2"
@@ -30,7 +30,7 @@ const UserProfileComponent = ({ Pname, Reviews, Status, Delete }) => {
           </MDBCard>
         </div>
       </div>
-    </div>
+    
   );
 };
 export default UserProfileComponent;

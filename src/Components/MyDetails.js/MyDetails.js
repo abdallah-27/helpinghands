@@ -1,70 +1,88 @@
 import * as React from "react";
+import { useEffect, useState } from "react";
 import { render } from "react-dom";
 import ReactDOM from "react-dom";
 
 import { Form, FormGroup, FormControl } from 'react-bootstrap';
+import './MyDetails.css'
+import Detailssidebar from "../Detailssidebarcomponent/Detailssidebar";
 
+const MyDetails = () => {
+    const [fname, setfname] = useState(" ");
+    const [lname, setlname] = useState(" ");
+    const [email, setemail] = useState(" ");
+    const [phone, setphone] = useState(" ");
+    const [address, setaddress] = useState(" ");
 
-const MyDetails = (props) => {
+    const handleInputChange=()=>{
+
+    }
 
     return (
        
-<div className="backCard">
 
-     <div >Hello</div>
+<div>
+<div>
+        
+    </div>   
             <div className="container ">
-                <div className="container col-md-10 ">
+                
                     <h2 className="text-center">Edit Profile</h2>
                     <form >
-                        <FormGroup className="col-md-12" >
+                        <FormGroup className="" >
                             <Form.Label>First Name</Form.Label>
-                            <FormControl
+                            <FormControl 
                                 type="text"
-                                placeholder= {props.Fname}
+                                placeholder= "Anna"
                                 name="Fname"
-                                onChange={props.handleInputChange}
+                                 onChange={(e) => {
+                                    setfname(e.target.value);}}
                             />
                             <Form.Control.Feedback />
                         </FormGroup>
                         <br />
-                        <FormGroup className="col-md-12" >
+                        <FormGroup className="" >
                             <Form.Label>Last Name</Form.Label>
                             <Form.Control
                                 type="text"
-                                placeholder= {props.Lname}
+                                placeholder= "Thomas"
                                 name="Lname"
-                                onChange={props.handleInputChange}
+                                onChange={(e) => {
+                                    setlname(e.target.value);}}
                             />
                             <Form.Control.Feedback />
                         </FormGroup>
                         <br />
-                        <FormGroup className="col-md-12" >
+                        <FormGroup className="" >
                             <Form.Label>Email</Form.Label>
                             <FormControl
                                 type="email"
-                                placeholder={props.email}
+                                placeholder= "annathomas23@gmail.com"
                                 name="email"
-                                onChange={props.handleInputChange}
+                                onChange={(e) => {
+                                    setemail(e.target.value);}}
                             />
                             <FormControl.Feedback />
                         </FormGroup>
-                        <FormGroup className="col-md-12" >
+                        <FormGroup className="" >
                             <Form.Label>Phone</Form.Label>
                             <Form.Control
                                 type="text"
-                                placeholder={props.phone}
+                                placeholder= "+49 15758962254"
                                 name="phone"
-                                onChange={props.handleInputChange}
+                                onChange={(e) => {
+                                    setphone(e.target.value);}}
                             />
                             <Form.Control.Feedback />
                         </FormGroup>
-                        <FormGroup className="col-md-12" >
+                        <FormGroup className="" >
                             <Form.Label>Address</Form.Label>
                             <Form.Control
                                 type="password"
-                                placeholder={props.address}
+                                placeholder= "Mannheim"
                                 name="address"
-                                onChange={props.handleInputChange}
+                                onChange={(e) => {
+                                    setaddress(e.target.value);}}
                             />
                             <Form.Control.Feedback />
                             
@@ -72,11 +90,11 @@ const MyDetails = (props) => {
                         
                     </form>
                     <div className="text-center">
-                        <button className="btn btn-success " onClick={props.handleSubmit}>Submit</button>
+                        <button className="btn btn-success btnColor ">Submit</button>
                     </div>
                 </div>
-            </div>
-        </div>
+                </div>
+        
     )
 
 }

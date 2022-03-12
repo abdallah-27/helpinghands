@@ -23,7 +23,7 @@ const Detailssidebar = () => {
         console.log("Componented about mounted");
         //console.log(history);
        //history.push("/details/generaldetails");
-      navigate("/details/generaldetails")
+      //navigate("/details/generaldetails")
 
     }, [])
     return (
