@@ -1,6 +1,7 @@
-  nav{
+  div .dropdown{
     display: inline-flex;
     gap: 130px;
     align-items: center;
     top: 20px;
+    margin-bottom: 20px;
   }  

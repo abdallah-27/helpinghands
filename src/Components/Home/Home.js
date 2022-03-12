@@ -2,6 +2,8 @@ import React, { useState } from "react";
 // import data from './data';
 import data from "../../data";
 import Filter from "../Filter/Filter";
+import Slider from "./Slider";
+
 
 const Home = () => {
 
@@ -15,34 +17,41 @@ const Home = () => {
             item[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
             )
         });
+        return (
+            <div className="content">
             
-    return(
-             <div>
+            <Slider/>
+
+            <div>
                 <section className="py-4 container">
                     
                     <div className="row justify-content-center"> 
 
                     <div className="col-12 mb-5">
                         <div className="mb-3 col-4 mx-auto text-center">
-                            <label className="position form-label h4">Helping Hands</label>
+
                             <input
                             type="text"
                             placeholder="Search for more services"
                             className="form-control"
                             value={filter}
                             onChange ={searchText.bind(this)}/>
+
                         </div>
-                        <Filter/>
+                        <div className="text-center">
+                            </div>
+                       
                     </div>
-                        {/* Print data using map method */}
                         {dataSearch.map((item,index)=>{
                             return(
                                 <div className="col-11 col-sm6 col-lg-3 mx-0 mb-4">
                                     <div className="card p-0 overflow-hidden h-100 shadow">
                                         <img src={item.img} className="card-body"/>
                                         <div className="card-body">
-                                            <h5 className="card-title"> {item.title}</h5>
-                                            <button type="button" className="btn btn-success">{item.desc}</button>
+                                            <h5 className="card-title text-center text"> {item.title}</h5>
+                                            <div className="text-center">
+                                            <button type="button" className="btn btn-outline-success text-center" style={{textAlign:"center"}}>{item.desc}</button>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -51,8 +60,10 @@ const Home = () => {
                     </div>
                 </section>
         
-             </div>  
-        
-    )
+             </div> 
+            </div>
+            
+        );
+    
 }
     export default Home 

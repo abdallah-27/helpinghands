@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import './Payment.css';
 
 import PaymentData from "./PaymentData.json"
@@ -6,6 +7,8 @@ import PaymentData from "./PaymentData.json"
 
 
 function PaymentReceipt() {
+    const location = useLocation();
+    console.log(location);
     return(
         <div className="container">
             <form id="form"> 

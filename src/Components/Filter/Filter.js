@@ -19,7 +19,7 @@ class Filter extends React.Component
     render()
     {
         return(
-            <nav className="dropdown">
+            <div className="dropdown">
                 <DropdownButton id="dropdown-basic-button" variant ="success" title="Location">
                     {this.filter.location.map(data =>(
                     <Dropdown.Item >{data}</Dropdown.Item>
@@ -32,7 +32,7 @@ class Filter extends React.Component
                     ))}
                 </DropdownButton>
 
-                <DropdownButton id="dropdown-basic-button" variant ="success" title="Price Range">
+                {/* <DropdownButton id="dropdown-basic-button" variant ="success" title="Price Range">
                     {this.filter.price.map(data =>(
                     <Dropdown.Item >{data}</Dropdown.Item>
                     ))}
@@ -42,8 +42,8 @@ class Filter extends React.Component
                     {this.filter.review.map(data =>(
                     <Dropdown.Item >{data}</Dropdown.Item>
                     ))}
-                </DropdownButton>
-            </nav>
+                </DropdownButton> */}
+            </div>
         )
     }
 }
