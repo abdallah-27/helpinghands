@@ -4,20 +4,24 @@ import './Payment.css';
 import PaymentData from "./PaymentData.json";
 import PaymentReceipt from "./PaymentReceipt";
 import {Link, Navigate, Route, Router, useNavigate} from "react-router-dom"
-
+// import { finished } from "stream";
 
 function Payment()  {
-
+  // const jsonfile = require('jsonfile')
     const [inputs, setInputs] = useState({});
-
+    
     const handleChange = (event) => {
       const name = event.target.name;
       const value = event.target.value;
       setInputs(values => ({...values, [name]: value}))
     }
-    // const navigate = useNavigate();
+
+    const navigate = useNavigate();
+    
+
     const handleSubmit = (event) => {
       event.preventDefault();
+
       var obj ={
         username: document.getElementById("username").value,
         surname: document.getElementById("surname").value,
@@ -28,16 +32,27 @@ function Payment()  {
         month: document.getElementById("month").value,
         // cvv: document.getElementById("cvv").value
       };
-      // console.log(obj);
-      PaymentData.push(obj);
-      // navigate('/PaymentReceipt');
+
+      const finished = (error) =>{
+        if(error){
+          console.log(error);
+          return;
+        }
+      }
+     // const jsonData = JSON.stringify(obj)
+
+      //jsonfile.writeFileSync('./PaymentData.json',jsonData,finished)
+      //fs.writeFile('./PaymentData.json', jsonData,finished)
+      // PaymentData.push(obj);
+      
+      navigate('/PaymentReceipt', { state: {data: obj}});
+       
    
     }
     
-   
     return (
 
-      <div className="container_payment">
+      <div className="container">
 
             <form id="form" onSubmit={handleSubmit}>
               <div className="input-group">
@@ -124,7 +139,7 @@ function Payment()  {
                 </div>
                 
 
-                <button to="/PaymentReceipt"  type="submit" onClick={handleSubmit}>Pay Now</button>
+                <button  type="submit" onClick={handleSubmit}>Pay Now</button>
                 
           </form>
         
@@ -133,4 +148,4 @@ function Payment()  {
     );
     
 }
-    export default Payment; 
+    export default Payment;

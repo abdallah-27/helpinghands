@@ -10,6 +10,7 @@ import Detailssidebar from "./Components/Detailssidebarcomponent/Detailssidebar"
 import Details from "./Components/Services/Details";
 import Address from "./Components/Services/Address";
 import Payment from "./Components/Services/Payment";
+import PaymentReceipt from "./Components/Services/PaymentReceipt";
 function App() {
   return (
     <div className="App">
@@ -34,6 +35,7 @@ function App() {
         <Route path="/details/address" element={<Address/>}></Route>
                            
         <Route path="/details/payment" element={<Payment/>}></Route>
+        <Route path="/paymentReceipt" element={<PaymentReceipt/>}></Route>
        
 
       </Routes>
