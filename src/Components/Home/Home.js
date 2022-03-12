@@ -44,10 +44,10 @@ const Home = (props) => {
     //console.log(location.state.data);
     if(location.state == null){
       console.log("inside null")
-      navigate('/UserProfile',{ state: null })
+      navigate('/UserProfilesidebar',{ state: null })
     }
     else {
-      navigate('/UserProfile',{ state: { data: location.state.data } })
+      navigate('/UserProfilesidebar',{ state: { data: location.state.data } })
     }
    
    };

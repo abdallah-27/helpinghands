@@ -1,8 +1,8 @@
 import * as React from "react";
 import { render } from "react-dom";
 import ReactDOM from "react-dom";
-import './UserProfile.css';
-import UserProfileSidebar from '../UserProfilesidebar/UserProfilesidebar'
+import "./UserProfile.css";
+import UserProfileSidebar from "../UserProfilesidebar/UserProfilesidebar";
 
 import Data from "./data.json";
 
@@ -12,28 +12,28 @@ import { Link, useLocation } from "react-router-dom";
 import UserProfileComponent from "./UserProfileComponent";
 import SimpleTabs from "../TabComponent/TabComponent";
 import Detailssidebar from "../Detailssidebarcomponent/Detailssidebar";
+import UserProfilesidebar from "../UserProfilesidebar/UserProfilesidebar";
 
 const UserProfile = () => {
   const location = useLocation();
   console.log(location);
   console.log(location.state);
+
   //console.log(location.state.data);
-  if(location.state == null){
+
+  if (location.state == null) {
     console.log("inside else");
     return (
-      
       <div>
-        <div>
-     
-  </div>
+        <div></div>
         <div className="Tabdiv">
-          
           <SimpleTabs
             one={
               <div className="postLine">
                 <h3 className="noLogin">Login to see appointments</h3>
               </div>
-            }two={
+            }
+            two={
               <div className="postLine">
                 <h3 className="noLogin">Login to see appointments</h3>
               </div>
@@ -45,12 +45,9 @@ const UserProfile = () => {
   } else if (location.state.data == "loggeduser") {
     return (
       <div>
-        <UserProfileSidebar/>
-        <div>
        
-      </div>
+        <div></div>
         <div className="Tabdiv">
-      
           <SimpleTabs
             one={
               <div className="postLine">
@@ -67,39 +64,36 @@ const UserProfile = () => {
                   );
                 })}
               </div>
-            }two={
+            }
+            two={
               <div className="postLineDone">
-                
-                  
-                    <div >
-                      <UserProfileComponent
-                        Pname="Chris Mathews"
-                        Reviews="4.8/5"
-                        Status="Appointment Done"
-                        Delete=""
-                      />
-                    </div>
-                  
-              
+                <div>
+                  <UserProfileComponent
+                    Pname="Chris Mathews"
+                    Reviews="4.8/5"
+                    Status="Appointment Done"
+                    Delete=""
+                  />
+                </div>
               </div>
             }
           />
         </div>
       </div>
     );
-  } else if ((location.state.data =="loggeduserNoApp")) {
+  } else if (location.state.data == "loggeduserNoApp") {
     return (
       <div>
-        <div>
-          
-  </div>
+       
+        <div></div>
         <div className="Tabdiv">
           <SimpleTabs
             one={
               <div className="postLine">
                 <h3 className="noLogin">No appointments</h3>
               </div>
-            }two={
+            }
+            two={
               <div className="postLine">
                 <h3 className="noLogin">No appointments</h3>
               </div>
@@ -108,9 +102,7 @@ const UserProfile = () => {
         </div>
       </div>
     );
-  } 
-
- 
+  }
 };
 
 export default UserProfile;
