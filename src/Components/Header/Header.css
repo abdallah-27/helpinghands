@@ -4,6 +4,46 @@ flex-direction: row;
 width: 100%;
 height: 100px;
 background-color: #FCF8E8;
-
+padding: 1%;
 }
 
+.Heading_div{
+    margin-left: 2%; 
+    margin-top: 2%;
+}
+
+
+.Handshake_icon{
+width: 100px;
+height: 100px;
+}
+
+.home_icon{
+    width: 60px;
+    height: 60px;
+    float: left;
+    color: black;
+}
+
+.account_icon{
+    width: 60px;
+    height: 60px;
+   margin-top: -10%;
+}
+
+.Profile_div{
+  margin-top: 2%;
+}
+
+.Login_div{
+    margin-left: 48%;
+    margin-right: 0%;
+    margin-top: 1%;
+}
+
+.profilebtn{
+margin-left: -48%;
+width: 30px;
+height: 30px;
+ opacity: 1%;  
+}
