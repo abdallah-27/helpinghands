@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./userProfile.css";
+import "./UserProfile.css";
 import {
   MDBCard,
   MDBCardBody,

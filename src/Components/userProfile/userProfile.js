@@ -1,14 +1,15 @@
 import * as React from "react";
 import { render } from "react-dom";
 import ReactDOM from "react-dom";
-import "./userProfile.css";
+import './UserProfile.css';
+import UserProfileSidebar from '../UserProfilesidebar/UserProfilesidebar'
 
 import Data from "./data.json";
 
 import "react-checkbox-tree/lib/react-checkbox-tree.css";
 import { Link, useLocation } from "react-router-dom";
 
-import UserProfileComponent from "../userProfile/UserProfileComponent";
+import UserProfileComponent from "./UserProfileComponent";
 import SimpleTabs from "../TabComponent/TabComponent";
 import Detailssidebar from "../Detailssidebarcomponent/Detailssidebar";
 
@@ -23,7 +24,7 @@ const UserProfile = () => {
       
       <div>
         <div>
-    {/* <Detailssidebar/> */}
+     
   </div>
         <div className="Tabdiv">
           
@@ -44,9 +45,10 @@ const UserProfile = () => {
   } else if (location.state.data == "loggeduser") {
     return (
       <div>
+        <UserProfileSidebar/>
         <div>
-        {/* <Detailssidebar/> */}
-  </div>
+       
+      </div>
         <div className="Tabdiv">
       
           <SimpleTabs
@@ -89,7 +91,7 @@ const UserProfile = () => {
     return (
       <div>
         <div>
-    {/* <Detailssidebar/> */}
+          
   </div>
         <div className="Tabdiv">
           <SimpleTabs

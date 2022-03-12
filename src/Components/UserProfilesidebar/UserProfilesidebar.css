@@ -1,0 +1,34 @@
+.UP_left_div {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    border: 1px solid black;
+    height: 450px;
+    background-color: #44bba4;
+    color: #f6f7eb;
+}
+
+.UP_GD_div {
+    /* padding: 15px; */
+    border-bottom: 1px solid white;
+}
+
+.UP_Details_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.UP_aa {
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    color: blue;
+}
+
+.UP_iconofdetail {
+    /* margin-left: 35px;
+    margin-right: 10px; */
+}
