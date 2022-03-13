@@ -11,7 +11,7 @@ import { BsStarFill, BsStar, BsArrowRight, BsHouseFill,BsChatRightTextFill } fro
 import { NavLink, Link } from "react-router-dom";
 import { Button } from "bootstrap";
 
-const ListingCardComponent = ({title, tag, age, price, LicNo}) => {
+const ListingCardComponent = ({title, tag, age, price, LicNo,imgsrc}) => {
   return (
     <div>
   
@@ -22,7 +22,7 @@ const ListingCardComponent = ({title, tag, age, price, LicNo}) => {
         
             <MDBCardBody className="CardImg">
             <img className="Card_compImg"
-                src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
+                src= {imgsrc}
                 alt=""
               />
               <div className="cardContent">
@@ -30,7 +30,10 @@ const ListingCardComponent = ({title, tag, age, price, LicNo}) => {
             
               
                 <MDBCardTitle className="title">Name: {title}</MDBCardTitle>
-                <MDBCardText className="chatIcon"><BsChatRightTextFill/></MDBCardText>
+                <MDBCardText className="chatIcon"> 
+                
+                <Link to={"/details/chat"} style={{ textDecoration: 'none' }}><BsChatRightTextFill/></Link>
+                </MDBCardText>
                 <MDBCardText className="age">{age}</MDBCardText>
                 <MDBCardText className="licno">{LicNo}</MDBCardText>
                 <MDBCardText className="tag">{tag}</MDBCardText>

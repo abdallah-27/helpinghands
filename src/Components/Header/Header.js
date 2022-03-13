@@ -38,7 +38,7 @@ const Header = () => {
 
 
     return (
-        <div className="Header_div">
+        <div className="Header_div sticky">
             <div className="image_div">
                 <FaHandshake className='Handshake_icon' />
             </div>

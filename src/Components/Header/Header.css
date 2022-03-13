@@ -6,29 +6,33 @@
     background-color: #578AB0;
     padding: 1%;
     position: fixed;
+    overflow: hidden;
 }
 
 .Heading_div {
     margin-left: 2%;
     margin-top: 2%;
+    color: white;
 }
 
 .Handshake_icon {
     width: 100px;
     height: 100px;
+    color: white;
 }
 
 .home_icon {
     width: 60px;
     height: 60px;
     float: left;
-    color: black;
+    color: white;
 }
 
 .account_icon {
     width: 60px;
     height: 60px;
     margin-top: -10%;
+    color: white;
 }
 
 .Profile_div {

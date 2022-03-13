@@ -57,17 +57,17 @@ export default function SimpleTabs({one, two}) {
 
   return (
     <div className={classes.root}>
-      <AppBar style={{marginLeft: "35%", width: "60%" , backgroundColor:"#44BBA4"}} position="static">
-        <Tabs style={{ width: "50%" , backgroundColor:"#44BBA4"}} value={value} onChange={handleChange} aria-label="simple tabs example">
+      {/* <AppBar style={{marginLeft: "35%", width: "60%" ,height:"120px", backgroundColor:"#44BBA4"}} position="static"> */}
+        <Tabs style={{marginLeft: "35%", width: "50%",marginTop:"9%", backgroundColor:"#44BBA4",position:"fixed"}} value={value} onChange={handleChange} aria-label="simple tabs example">
           <Tab label="Current Appointments" {...a11yProps(0)} />
           <Tab label="Previous Appointments" {...a11yProps(1)} />
           
         </Tabs>
-      </AppBar>
-      <TabPanel value={value} index={0}>
+      {/* </AppBar> */}
+      <TabPanel style={{}}  value={value} index={0}>
       {one}
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel style={{position:"fixed"}}  value={value} index={1}>
        {two}
       </TabPanel>
      

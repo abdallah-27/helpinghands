@@ -36,29 +36,35 @@ const Listing = () => {
           {
             <ListingCardComponent
               title="Anna Thomas"
+             
               tag="Working as a dog walker since 2 years and can manage efficiently"
               age="Los Angeles, 26 years old"
               price="Price : 10$/hour"
               LicNo="AQ5468955564"
+              imgsrc="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
             />
           }
 
           {
             <ListingCardComponent
-              title="Vivek Sharma"
+              title="Vivek Oberoi"
+              
               tag="Working as a dog walker since 2 years and can manage efficiently"
               age="Los Angeles, 16 years old"
               price="Price : 10$/hour"
               LicNo="AQ5468955564"
+              imgsrc="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
             />
           }
                     {
             <ListingCardComponent
-              title="Vivek Sharma"
+              title="Ricky Jackson"
+             
               tag="Working as a dog walker since 2 years and can manage efficiently"
               age="Los Angeles, 16 years old"
               price="Price : 10$/hour"
               LicNo="AQ5468955564"
+              imgsrc="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
             />
           }
 

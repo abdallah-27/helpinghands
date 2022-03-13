@@ -7,14 +7,14 @@
     width: 60%;
     height: 30vh; */
     border-radius: 1rem;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     padding-right: -4%;
     padding-top: -70rem;
-    margin-top: 3%;
+    margin-top: 6%;
     background-color: #578AB0;
     width: 50%;
     height: 28vh;
-    margin-left: 40%;
+    margin-left: 38%;
 }
 
 .CardPosition {
@@ -100,6 +100,7 @@
    */
     margin-top: -1%;
     margin-left: -10%;
+    margin-bottom: -5%;
 }
 
 .houseIcon {

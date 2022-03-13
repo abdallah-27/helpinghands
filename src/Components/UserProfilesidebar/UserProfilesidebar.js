@@ -20,12 +20,12 @@ const UserProfilesidebar=()=>{
                 src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
                 alt=""
                 />
-
+<div className='styleside'>
                 <p>Ashwini Sarode</p>
                 <p>ashwini9Sarode@gmail.com</p>
                 <p>+49 12575923849</p>
                 <p>Mannheim,68309</p>
-                  
+                </div>
                 </div>
 
         </nav>
