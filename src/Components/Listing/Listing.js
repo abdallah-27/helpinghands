@@ -21,7 +21,8 @@ import Widget from "../FilterBarComponent/widget";
 import ListingCardComponent from "../ListingCardComponent/ListingCardComponent";
 import UserProfileComponent from "../userProfile/UserProfileComponent";
 
-const Listing = (props) => {
+
+const Listing = () => {
   
     return (
       <div>

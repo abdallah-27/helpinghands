@@ -10,11 +10,13 @@ import Detailssidebar from "./Components/Detailssidebarcomponent/Detailssidebar"
 import Details from "./Components/Services/Details";
 import Address from "./Components/Services/Address";
 import Payment from "./Components/Services/Payment";
+import UserProfilesidebar from "./Components/UserProfilesidebar/UserProfilesidebar";
 function App() {
   return (
     <div className="App">
      
-      <h1 className="websiteTitle">HelpingHands</h1>
+  
+
       
          <Routes>
          <Route path={'/Home'} element={<Home/>} ></Route>

@@ -9,6 +9,7 @@ import { useNavigate,useLocation } from "react-router-dom";
 import Listing from "../Listing/Listing";
 import UserProfile from "../userProfile/UserProfile";
 import Login from "../Login/Login"
+import Header from "../Header/Header";
 // import { Switch } from "@material-ui/core";
 import './Home.css'
 
@@ -55,6 +56,7 @@ const Home = (props) => {
   
   return (
     <div>
+      <Header/>
       <button
                         type="button"
                         className="btn btn-success" onClick={toUserprof}>Profile</button>  

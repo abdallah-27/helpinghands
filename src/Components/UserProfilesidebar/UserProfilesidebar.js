@@ -1,6 +1,6 @@
 import './UserProfilesidebar.css'
 import { NavLink } from 'react-router-dom';
-import { MdFormatAlignJustify } from "react-icons/md";
+import { MdFormatAlignJustify,MdOutlineDateRange } from "react-icons/md";
 
 
 const UserProfilesidebar=()=>{
@@ -23,7 +23,7 @@ const UserProfilesidebar=()=>{
             </div>
             <div className="UP_GD_div">
                 <div className="UP_aa">
-                    {/* <MdInsertInvitation className="UP_iconofdetail" /> */}
+                    <MdOutlineDateRange className="UP_iconofdetail" /> 
                     <NavLink className="UP_aa" to="">My Appointments</NavLink>
                 </div>
 

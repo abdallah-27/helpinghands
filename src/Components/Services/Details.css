@@ -2,24 +2,43 @@
     /*the sidebar is not in content*/
     display: flex;
     flex-direction: row;
-    margin-left: 2px;
+    /* margin-left: 2px;
     margin-top: 2px;
+ */
+ background-color: #FCF8E8;
 }
 
+
+.subTitle{
+    text-align: left;
+}
+.Page_title{
+    text-align: left;
+}
 .center_div {
-    width: 450px;
+    width: 570px;
     height: 450px;
-    margin-left: 2%;
+     margin-left: 7%; 
     background-color: #FCF8E8;
-    margin-right: 4px;
+    /* margin-right: 4px; */
     border: 1px solid #cccccc;
     box-shadow: 1px 1px #cccccc;
     border-radius: 2%;
-    padding: 2px;
+    padding: 10px;
 }
 
-.text-line {
-    width: 380px;
+.right_div{
+    margin-left: 1%;
+ }
+
+.text_line {
+    width: 480px;
+    margin-left: -11%;
+   
+}
+
+.DescDetail{
+    text-align: left;
 }
 
 textarea {
@@ -32,8 +51,11 @@ textarea {
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
+    margin-left: -11%;
 }
-
+.Addimage_div{
+    text-align: left;
+}
 input[type="file"] {
     display: none;
 }
@@ -44,12 +66,11 @@ input[type="file"] {
     position: absolute;
     font-size: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   margin-top: -1%;
 }
 
 .Freelancersinfo_Div {
-    width: 230px;
+    width: 300px;
     height: 150px;
     border: 1px solid #cccccc;
     box-shadow: 1px 1px #cccccc;
@@ -73,7 +94,7 @@ input[type="file"] {
 
 .freelanc_info {
     padding: 2px;
-    margin-left: 5px;
+    margin-left: -21px;
     margin-top: 5px;
     width: 217px;
     height: 55px;
@@ -83,7 +104,7 @@ input[type="file"] {
     width: 135px;
     height: 80px;
     margin-left: 40%;
-    margin-top: -35%;
+    margin-top: -26%;
 }
 
 .name {
@@ -105,7 +126,7 @@ input[type="file"] {
     border-radius: 3%;
     height: 45px;
     margin-top: 2%;
-    width: 230px;
+    width: 300px;
     background-color: #FCF8E8;
 }
 
@@ -127,7 +148,7 @@ input[type="file"] {
 }
 
 .Ratingreview_div {
-    width: 230px;
+    width: 300px;
     height: 230px;
     border: 1px solid #b1b4b4;
     box-shadow: 1px 1px #cccccc;
@@ -139,7 +160,7 @@ input[type="file"] {
 }
 
 .Title_div {
-    margin-left: 7%;
+    margin-left: -70%;
 }
 
 .label_Review {
@@ -164,7 +185,7 @@ input[type="file"] {
 
 .Review_title {
     width: 68%;
-    margin-left: 2%;
+    margin-left: -9%;
     height: 50%;
     margin-top: 2%;
 }
@@ -172,7 +193,7 @@ input[type="file"] {
 .reviewinwords {
     width: 150px;
     height: 30px;
-    margin-left: 30%;
+    margin-left: 20%;
     margin-top: -11%;
 }
 
@@ -195,12 +216,12 @@ input[type="file"] {
 }
 
 .line2_reviewwords {
-    margin-left: 6%;
+    margin-left: 20%;
 }
 
 .Btn_next_div {
     margin-top: 20%;
-    margin-left: 25%;
+    align-items: center;
 }
 
 .bttn {
