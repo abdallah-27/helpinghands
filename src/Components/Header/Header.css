@@ -6,6 +6,8 @@
     background-color: #578AB0;
     padding: 1%;
     position: fixed;
+    overflow: hidden;
+    margin-top: -13%;
 }
 
 .Heading_div {
@@ -49,4 +51,8 @@
     width: 30px;
     height: 30px;
     opacity: 50%;
+}
+
+.image_div{
+margin-top: 0%;
 }
