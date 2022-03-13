@@ -9,18 +9,29 @@ import { useCookies,cookies } from 'react-cookie';
 
 
 const Header = () => {
+    const [cookies, setCookie] = useCookies(['user']);
     const navigate = useNavigate();
     // console.log(cookies.data)
+    const data = document.cookie.replace(/(?:(?:^|.*;\s*)data\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    console.log("datainhome:"+data)
     const userProfdirection=()=>{
-        const data = document.cookie.replace(/(?:(?:^|.*;\s*)data\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-        if ( data!= null) {
-            console.log("inside null");
+    
+        if ( data!= "null") {
+           
             navigate("/UserProfile", { state: { data: data } });
           } else {
             navigate("/UserProfile", { state: null });
             
           }
         };
+
+        const logout=()=>{
+            console.log("logout button")
+            setCookie('data',null, { path: '/' });
+            console.log("cookieesssslogout:"+ data)
+            navigate("/Home");
+
+        }
     return (
         <div className="Header_div">
             <div className="image_div">
@@ -42,6 +53,13 @@ const Header = () => {
            
                    
             <button id="btn_profile" accept='image' name="file" className='profilebtn' onClick={userProfdirection} > </button>
+            <MdOutlineAccountCircle className='account_icon' />     
+            </div>
+
+            <div className="Logout_div">
+           
+                   
+            <button id="btn_profile" accept='image' name="file" className='logout' onClick={logout} > </button>
             <MdOutlineAccountCircle className='account_icon' />     
             </div>
 

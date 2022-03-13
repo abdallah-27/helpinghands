@@ -21,7 +21,7 @@ const UserProfile = (props) => {
   const navigate = useNavigate();
   console.log(location);
   console.log(location.state);
- 
+  const data = document.cookie.replace(/(?:(?:^|.*;\s*)data\s*\=\s*([^;]*).*$)|^.*$/, "$1");
   const btnpress=()=>{
     navigate("/Login")
   }
@@ -30,7 +30,7 @@ const UserProfile = (props) => {
   }
   //console.log(location.state.data);
 
-  if (location.state == null ) {
+  if (data == "null" || location.state == null ) {
    
     console.log("inside else");
     return (
@@ -55,7 +55,7 @@ const UserProfile = (props) => {
         </div>
      
     );
-  } else if (location.state.data == "loggeduser" || cookies.data == "loggeduser") {
+  } else if (location.state.data == "loggeduser" || data == "loggeduser") {
     return (
       <div>
        
@@ -94,7 +94,7 @@ const UserProfile = (props) => {
         </div>
       </div>
     );
-  } else if (location.state.data == "loggeduserNoApp" || cookies.data == "loggeduserNoApp") {
+  } else if (location.state.data == "loggeduserNoApp" || data == "loggeduserNoApp") {
     return (
       <div>
        

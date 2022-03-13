@@ -17,7 +17,9 @@ const Home = () => {
         console.log(location);
         console.log(location.state);
         console.log("datatdtadta"+data)
-        if (location.state == null || data == null) {
+
+        
+        if ( data == "null" || location.state == null ) {
           console.log("inside null");
           navigate("/UserProfile", { state: null });
         } else {
