@@ -1,8 +1,14 @@
+.Chat_container{
+display: flex;
+flex-direction: row;
+
+}
 .contentchat{
     display: flex;
-    flex-direction: column;
-    margin-left: 333px;
-    margin-top: -450px;
+    flex-direction: column; 
+     margin-top: 1%; 
+     margin-left: 5%;
+   
 }
 
 .chatscreen_div{

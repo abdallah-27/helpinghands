@@ -22,7 +22,8 @@ import ListingCardComponent from "../ListingCardComponent/ListingCardComponent";
 import UserProfileComponent from "../userProfile/UserProfileComponent";
 import Header from "../Header/Header";
 
-const Listing = (props) => {
+
+const Listing = () => {
   
     return (
       <div>

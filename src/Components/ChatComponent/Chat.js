@@ -1,10 +1,16 @@
 import './Chat.css'
 import Textareacomponent from '../textareacomponent/Textareacomponent';
-
+import Detailssidebar from '../Detailssidebarcomponent/Detailssidebar';
 import {MdPlayArrow} from "react-icons/md";
 
+
 const Chat =()=>{
-return (<div className='contentchat'>
+return (
+<div className='Chat_container'>
+    <div className='Chatsidebar_div'>
+<Detailssidebar/>
+    </div>
+<div className='contentchat'>
     <div className='chatscreen_div'>
     <div className='Messageimagediv'>
        
@@ -21,7 +27,7 @@ return (<div className='contentchat'>
         <div><MdPlayArrow className='MdPlayArrow_icon'></MdPlayArrow></div>
         </div>
     </div>
-
+    </div>
     </div>)
 }
 

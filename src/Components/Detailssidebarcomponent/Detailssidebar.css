@@ -1,3 +1,7 @@
+.Detailssidebar_container {
+    width: 250px;
+}
+
 .left_div {
     display: flex;
     flex-direction: column;

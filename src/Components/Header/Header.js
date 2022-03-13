@@ -32,6 +32,11 @@ const Header = () => {
             navigate("/Home");
 
         }
+
+
+
+
+
     return (
         <div className="Header_div">
             <div className="image_div">

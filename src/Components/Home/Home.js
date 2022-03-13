@@ -8,6 +8,12 @@ import { FaHandshake } from "react-icons/fa";
 import { MdOutlineAccountCircle, MdOutlineHome } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { useNavigate,useLocation } from "react-router-dom";
+import Listing from "../Listing/Listing";
+import UserProfile from "../userProfile/UserProfile";
+import Login from "../Login/Login"
+import Header from "../Header/Header";
+// import { Switch } from "@material-ui/core";
+import './Home.css'
 
 const Home = () => {
     const location = useLocation();
