@@ -14,6 +14,7 @@ import SimpleTabs from "../TabComponent/TabComponent";
 import Detailssidebar from "../Detailssidebarcomponent/Detailssidebar";
 import UserProfilesidebar from "../UserProfilesidebar/UserProfilesidebar";
 import { useCookies } from 'react-cookie';
+import Header from "../Header/Header";
 
 const UserProfile = (props) => {
   const [cookies, setCookie] = useCookies(['user']);
@@ -34,6 +35,7 @@ const UserProfile = (props) => {
    
     console.log("inside else");
     return (
+      <div> <Header></Header>
       <div class="Up_login_container">
 
        <p className="p">Please login to see your personalised appointments</p>
@@ -53,12 +55,12 @@ const UserProfile = (props) => {
             </button>
           
         </div>
-     
+        </div>
     );
   } else if (location.state.data == "loggeduser" || data == "loggeduser") {
     return (
       <div>
-       
+       <Header></Header>
         <div><UserProfilesidebar /></div>
         <div className="Tabdiv">
           <SimpleTabs
@@ -97,7 +99,7 @@ const UserProfile = (props) => {
   } else if (location.state.data == "loggeduserNoApp" || data == "loggeduserNoApp") {
     return (
       <div>
-       
+        <Header></Header>
         <div><UserProfilesidebar/></div>
         <div className="Tabdiv">
           <SimpleTabs
