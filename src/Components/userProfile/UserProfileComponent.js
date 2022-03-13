@@ -9,7 +9,7 @@ import {
 } from "mdb-react-ui-kit";
 const UserProfileComponent = ({ Pname, Reviews, Status, Delete }) => {
   return (
-    <div>
+    <div style={{}}>
       <div className="MainCard2">
        
           <MDBCard className="card_comp2"> 

@@ -33,10 +33,6 @@ const Header = () => {
 
         }
 
-
-
-
-
     return (
         <div className="Header_div sticky">
             <div className="image_div">

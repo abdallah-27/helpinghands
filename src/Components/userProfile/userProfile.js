@@ -35,7 +35,9 @@ const UserProfile = (props) => {
    
     console.log("inside else");
     return (
-      <div> <Header></Header>
+      
+      <div> 
+      <div>
       <div class="Up_login_container">
 
        <p className="p">Please login to see your personalised appointments</p>
@@ -56,11 +58,12 @@ const UserProfile = (props) => {
           
         </div>
         </div>
+        </div>
     );
   } else if (location.state.data == "loggeduser" || data == "loggeduser") {
     return (
       <div>
-       <Header></Header>
+       <div style={{marginTop:"-2%"}}> <Header></Header></div>
         <div><UserProfilesidebar /></div>
         <div className="Tabdiv">
           <SimpleTabs
@@ -94,7 +97,9 @@ const UserProfile = (props) => {
             }
           />
         </div>
+       
       </div>
+     
     );
   } else if (location.state.data == "loggeduserNoApp" || data == "loggeduserNoApp") {
     return (

@@ -11,7 +11,7 @@
 }
 
 .CardPosition {
-    margin-top: 390px;
+    margin-top: 300px;
     margin-left: -12%;
     margin-right: 60px;
 }
@@ -20,4 +20,18 @@
     font-weight: 400;
     margin-left: -30%;
     margin-bottom: -2%;
+}
+
+.Header_div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background-color: #578AB0;
+    padding: 1%;
+    position: fixed;
+}
+
+.container_listing {
+    /* margin-top: 2%; */
 }

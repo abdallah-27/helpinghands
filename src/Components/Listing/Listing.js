@@ -22,57 +22,59 @@ import ListingCardComponent from "../ListingCardComponent/ListingCardComponent";
 import UserProfileComponent from "../userProfile/UserProfileComponent";
 import Header from "../Header/Header";
 
-
 const Listing = () => {
-  
-    return (
-      <div>
-        <Header></Header>
-         <div className="results"><h3>Results for your search</h3></div>
-         <Widget />
-       
+  return (
+    <div >
+     
+<div className="container_listing
+">
+     
+      <div className="CardPosition">
+        {
+          <ListingCardComponent
+            title="Anna Thomas"
+            tag="Working as a dog walker since 2 years and can manage efficiently"
+            age="Los Angeles, 26 years old"
+            price="Price : 10$/hour"
+            LicNo="AQ5468955564"
+            imgsrc="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
+          />
+        }
 
-        <div className="CardPosition">
-          {
-            <ListingCardComponent
-              title="Anna Thomas"
-             
-              tag="Working as a dog walker since 2 years and can manage efficiently"
-              age="Los Angeles, 26 years old"
-              price="Price : 10$/hour"
-              LicNo="AQ5468955564"
-              imgsrc="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
-            />
-          }
+        {
+          <ListingCardComponent
+            title="Vivek Oberoi"
+            tag="Working as a dog walker since 2 years and can manage efficiently"
+            age="Los Angeles, 16 years old"
+            price="Price : 10$/hour"
+            LicNo="AQ5468955564"
+            imgsrc="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
+          />
+        }
+        {
+          <ListingCardComponent
+            title="Ricky Jackson"
+            tag="Working as a dog walker since 2 years and can manage efficiently"
+            age="Los Angeles, 16 years old"
+            price="Price : 10$/hour"
+            LicNo="AQ5468955564"
+            imgsrc="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
+          />
+        }
 
-          {
-            <ListingCardComponent
-              title="Vivek Oberoi"
-              
-              tag="Working as a dog walker since 2 years and can manage efficiently"
-              age="Los Angeles, 16 years old"
-              price="Price : 10$/hour"
-              LicNo="AQ5468955564"
-              imgsrc="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
-            />
-          }
-                    {
-            <ListingCardComponent
-              title="Ricky Jackson"
-             
-              tag="Working as a dog walker since 2 years and can manage efficiently"
-              age="Los Angeles, 16 years old"
-              price="Price : 10$/hour"
-              LicNo="AQ5468955564"
-              imgsrc="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
-            />
-          }
-
-          {/* {<BsHouseFill className="houseIcon" />} */}
-        </div>
+        {/* {<BsHouseFill className="houseIcon" />} */}
       </div>
-    );
-  
+      <Widget />
+      
+      <div style={{ marginTop: "-49%" }}>
+        <Header></Header>
+      </div>
+      <div className="results" >
+        <h3 style={{ marginTop: "10%" }} >Results for your search</h3>
+      </div>
+    </div>
+    </div>
+  );
 };
 
 export default Listing;

@@ -4,7 +4,7 @@
     padding-right: -4%;
     padding-top: -70rem;
     margin-top: 2%;
-    background-color: #44BBA4;
+    background-color: #578AB0;
     width: 50%;
     height: 32vh;
     margin-left: 40%;
@@ -61,12 +61,14 @@
 }
 
 .MainCard2 {
-    margin-top: -35%;
+    margin-top: -30%;
     margin-left: -10%;
+    scroll-behavior: none;
+    width: 100%;
 }
 
 .houseIcon {
-    color: black;
+    color: white;
     margin-bottom: -2%;
     height: 15px;
 }
@@ -78,7 +80,7 @@
 
 .p {
     padding-top: 25%;
-    padding-bottom: 2%;
+    padding-bottom: 15%;
     font-size: 22px;
     color: antiquewhite;
 }
@@ -92,4 +94,5 @@
     width: 50%;
     background-color: #004A5F;
     margin-left: 25%;
+    margin-top: 10%;
 }
