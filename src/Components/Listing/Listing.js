@@ -20,11 +20,13 @@ import Widget from "../FilterBarComponent/widget";
 
 import ListingCardComponent from "../ListingCardComponent/ListingCardComponent";
 import UserProfileComponent from "../userProfile/UserProfileComponent";
+import Header from "../Header/Header";
 
 const Listing = (props) => {
   
     return (
       <div>
+        <Header></Header>
          <div className="results"><h3>Results for your search</h3></div>
          <Widget />
        

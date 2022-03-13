@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import ReactDOM from "react-dom";
 import "./UserProfile.css";
 import UserProfileSidebar from "../UserProfilesidebar/UserProfilesidebar";
-
+import { useNavigate } from "react-router-dom";
 import Data from "./data.json";
 
 import "react-checkbox-tree/lib/react-checkbox-tree.css";
@@ -13,40 +13,53 @@ import UserProfileComponent from "./UserProfileComponent";
 import SimpleTabs from "../TabComponent/TabComponent";
 import Detailssidebar from "../Detailssidebarcomponent/Detailssidebar";
 import UserProfilesidebar from "../UserProfilesidebar/UserProfilesidebar";
+import { useCookies } from 'react-cookie';
 
-const UserProfile = () => {
+const UserProfile = (props) => {
+  const [cookies, setCookie] = useCookies(['user']);
   const location = useLocation();
+  const navigate = useNavigate();
   console.log(location);
   console.log(location.state);
-
+ 
+  const btnpress=()=>{
+    navigate("/Login")
+  }
+  const btnpress_login=()=>{
+    navigate("/Home")
+  }
   //console.log(location.state.data);
 
-  if (location.state == null) {
+  if (location.state == null ) {
+   
     console.log("inside else");
     return (
-      <div>
-        <div></div>
-        <div className="Tabdiv">
-          <SimpleTabs
-            one={
-              <div className="postLine">
-                <h3 className="noLogin">Login to see appointments</h3>
-              </div>
-            }
-            two={
-              <div className="postLine">
-                <h3 className="noLogin">Login to see appointments</h3>
-              </div>
-            }
-          />
+      <div class="Up_login_container">
+
+       <p className="p">Please login to see your personalised appointments</p>
+        <button
+              type="submit"
+              className="btn btn-dark btn-lg b"
+              onClick={btnpress}
+            >
+              Login
+            </button>
+            <button
+              type="submit"
+              className="btn btn-dark btn-lg b"
+              onClick={btnpress_login}
+            >
+              Home
+            </button>
+          
         </div>
-      </div>
+     
     );
-  } else if (location.state.data == "loggeduser") {
+  } else if (location.state.data == "loggeduser" || cookies.data == "loggeduser") {
     return (
       <div>
        
-        <div></div>
+        <div><UserProfilesidebar /></div>
         <div className="Tabdiv">
           <SimpleTabs
             one={
@@ -81,11 +94,11 @@ const UserProfile = () => {
         </div>
       </div>
     );
-  } else if (location.state.data == "loggeduserNoApp") {
+  } else if (location.state.data == "loggeduserNoApp" || cookies.data == "loggeduserNoApp") {
     return (
       <div>
        
-        <div></div>
+        <div><UserProfilesidebar/></div>
         <div className="Tabdiv">
           <SimpleTabs
             one={
@@ -107,22 +120,4 @@ const UserProfile = () => {
 
 export default UserProfile;
 
-{
-  /* <ListingCardComponent 
-      title="Anna Thomas"
-      tag="Working as a dog walker since 2 years and can manage efficiently" 
-      age="Los Angeles, 26 years old"
-      price="10$/hour"/>  */
-}
 
-{
-  /* <ListingCardComponent 
-      title="Vivek Sharma"
-      tag="Working as a dog walker since 2 years and can manage efficiently" 
-      age="Los Angeles, 16 years old"
-      price="10$/hour"/> */
-}
-
-{
-  /* <BsHouseFill className="houseIcon" /> */
-}

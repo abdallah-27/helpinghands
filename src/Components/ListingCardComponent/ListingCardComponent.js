@@ -7,7 +7,7 @@ import {
   MDBBtn,
 } from "mdb-react-ui-kit";
 import "./ListingCardComponent.css";
-import { BsStarFill, BsStar, BsArrowRight, BsHouseFill } from "react-icons/bs";
+import { BsStarFill, BsStar, BsArrowRight, BsHouseFill,BsChatRightTextFill } from "react-icons/bs";
 import { NavLink, Link } from "react-router-dom";
 import { Button } from "bootstrap";
 
@@ -18,7 +18,7 @@ const ListingCardComponent = ({title, tag, age, price, LicNo}) => {
       <div className="MainCard">
         <div>
         <Link to="/details" style={{ textDecoration: 'none' }}>
-          <MDBCard className="card_comp">
+          <MDBCard className="card_comp shadow">
         
             <MDBCardBody className="CardImg">
             <img className="Card_compImg"
@@ -30,7 +30,7 @@ const ListingCardComponent = ({title, tag, age, price, LicNo}) => {
             
               
                 <MDBCardTitle className="title">Name: {title}</MDBCardTitle>
-                
+                <MDBCardText className="chatIcon"><BsChatRightTextFill/></MDBCardText>
                 <MDBCardText className="age">{age}</MDBCardText>
                 <MDBCardText className="licno">{LicNo}</MDBCardText>
                 <MDBCardText className="tag">{tag}</MDBCardText>

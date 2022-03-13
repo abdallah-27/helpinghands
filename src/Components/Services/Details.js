@@ -11,25 +11,39 @@ import {
     MDBCardText,
     MDBBtn,
 } from "mdb-react-ui-kit";
+import Header from '../Header/Header';
 
 const Details = () => {
     return (
-        <div className="content">
+        <div> <Header></Header>
+        <div className="content_details">
+           
            <div>
-               <Detailssidebar/>
+               <Detailssidebar />
            </div>
 
             
                         <div className="center_div">
+                            <div className='Page_title'>
                             <h4>General Details</h4>
+                            </div>
+                         
+                         <div className='subTitle'>
+
+                         
                             <h5>What is to be done?</h5>
-                            <Textlinecomponent className="line" />
+                            </div>
+                            <Textlinecomponent className='line' />
                             <br></br>
                             <br></br>
+                            <div className='DescDetail'>
                             <h5>Describe your order in detail</h5>
+                            </div>
                             <Textareacomponent placeholder="eg: Get your own tools bitte"></Textareacomponent>
                             <br></br>
+                            <div className='Addimage_div'>
                             <h5>Add images</h5>
+                            </div>
 
 
                             <label className='label' htmlFor ='file'>
@@ -119,7 +133,7 @@ const Details = () => {
 
 
             </div>
-
+</div>
     )
 }
 

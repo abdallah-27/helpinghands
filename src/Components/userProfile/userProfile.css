@@ -10,8 +10,6 @@
     margin-left: 40%;
 }
 
-
-
 .postLine {
     margin-top: 60%;
     margin-right: -3%;
@@ -71,4 +69,27 @@
     color: black;
     margin-bottom: -2%;
     height: 15px;
+}
+
+.Tabdiv {
+    margin-top: 2%;
+    margin-left: -10%;
+}
+
+.p {
+    padding-top: 25%;
+    padding-bottom: 2%;
+    font-size: 22px;
+    color: antiquewhite;
+}
+
+.b {
+    margin: 2%;
+}
+
+.Up_login_container {
+    height: 50%;
+    width: 50%;
+    background-color: #004A5F;
+    margin-left: 25%;
 }

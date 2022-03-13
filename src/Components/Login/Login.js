@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { render } from "react-dom";
 import { useNavigate } from "react-router-dom";
 
+import { useCookies } from 'react-cookie';
 import UserProfile from "../userProfile/UserProfile";
 import './Login.css'
 
@@ -10,6 +11,7 @@ const Login = () => {
 
   const [emaillog, setEmaillog] = useState(" ");
   const [passwordlog, setPasswordlog] = useState(" ");
+  const [cookies, setCookie] = useCookies(['user']);
 
   const login = () => {
     if (
@@ -18,6 +20,7 @@ const Login = () => {
     ) {
       setEmaillog("abc");
       setPasswordlog("password");
+      setCookie('data',"loggeduser", { path: '/' });
      
       navigate("/Home", { state: { data: "loggeduser" } });
     } else if (
@@ -26,6 +29,7 @@ const Login = () => {
     ) {
       setEmaillog("bcd");
       setPasswordlog("123");
+     setCookie('data',"loggeduserNoApp", { path: '/' });
       navigate("/Home", { state: { data: "loggeduserNoApp" } });
     }
   };

@@ -6,6 +6,7 @@ import DateTime from '../Services/DateTime.js';
 import Details from "../Services/Details.js";
 import { useEffect } from "react";
 import './Detailssidebar.css';
+import { MdChat } from "react-icons/md";
 
 import {
     MdFormatAlignJustify, MdPostAdd, MdAddLocationAlt, MdLocalSee,
@@ -23,12 +24,12 @@ const Detailssidebar = () => {
         console.log("Componented about mounted");
         //console.log(history);
        //history.push("/details/generaldetails");
-      //navigate("/details/generaldetails")
+      navigate("/details/generaldetails")
 
     }, [])
     return (
 
-        <div className="container">
+        <div className="Detailssidebar_container">
                     <div className="left_div">
                         <nav className="Details_nav">
                             <div className="GD_div">
@@ -54,6 +55,18 @@ const Detailssidebar = () => {
                                 <div className="aa">
                                     <MdCreditCard className="iconofdetail" />
                                     <NavLink className="aa" to="/details/payment">Payment</NavLink>
+                                </div>
+
+                            </div>
+
+
+                            <div >
+                                <div className="chat_div" >
+                                    
+                                    <NavLink  to="/details/chat"><MdChat className="Chat_icon" /></NavLink>
+                                    <div className="Text_chat" >
+                                    <p>Do you want to discuss more about the service? Chat to the Service Provider</p>
+                                    </div>
                                 </div>
 
                             </div>

@@ -19,35 +19,31 @@ class Filter extends React.Component
     render()
     {
         return(
-            <nav className="dropdown">
+            <div className="dropdown">
                 <DropdownButton id="dropdown-basic-button" variant ="success" title="Location">
-                    {this.filter.location.map((data,index) =>(
-                        <div key={index}><Dropdown.Item >{data}</Dropdown.Item></div>
-                    
+                    {this.filter.location.map(data =>(
+                    <Dropdown.Item >{data}</Dropdown.Item>
                     ))}
                 </DropdownButton>
 
                 <DropdownButton id="dropdown-basic-button" variant ="success" title="Categories">
-                {this.filter.location.map((data,index) =>(
-                        <div key={index}><Dropdown.Item >{data}</Dropdown.Item></div>
-                    
+                    {this.filter.categories.map(data =>(
+                    <Dropdown.Item >{data}</Dropdown.Item>
                     ))}
                 </DropdownButton>
 
-                <DropdownButton id="dropdown-basic-button" variant ="success" title="Price Range">
-                {this.filter.location.map((data,index) =>(
-                        <div key={index}><Dropdown.Item >{data}</Dropdown.Item></div>
-                    
+                {/* <DropdownButton id="dropdown-basic-button" variant ="success" title="Price Range">
+                    {this.filter.price.map(data =>(
+                    <Dropdown.Item >{data}</Dropdown.Item>
                     ))}
                 </DropdownButton>
 
                 <DropdownButton id="dropdown-basic-button" variant ="success" title="Review">
-                {this.filter.location.map((data,index) =>(
-                        <div key={index}><Dropdown.Item >{data}</Dropdown.Item></div>
-                    
+                    {this.filter.review.map(data =>(
+                    <Dropdown.Item >{data}</Dropdown.Item>
                     ))}
-                </DropdownButton>
-            </nav>
+                </DropdownButton> */}
+            </div>
         )
     }
 }

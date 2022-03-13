@@ -10,8 +10,8 @@
     padding-bottom: 30px;
     padding-right: -4%;
     padding-top: -70rem;
-    margin-top: 2%;
-    background-color: #44BBA4;
+    margin-top: 3%;
+    background-color: #578AB0;
     width: 50%;
     height: 28vh;
     margin-left: 40%;
@@ -19,6 +19,10 @@
 
 .CardPosition {
     margin-top: 0%;
+}
+
+.chatIcon {
+    margin-left: 80%;
 }
 
 .Card_compImg {
@@ -43,12 +47,12 @@
 
 .age {
     margin-left: -6%;
-    padding: 4px;
+    padding: -4px;
 }
 
 .licno {
     margin-left: -6%;
-    padding: 4px;
+    padding: -4px;
 }
 
 .cardContent {
