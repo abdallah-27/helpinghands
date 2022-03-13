@@ -11,6 +11,8 @@ import Details from "./Components/Services/Details";
 import Address from "./Components/Services/Address";
 import Payment from "./Components/Services/Payment";
 import UserProfilesidebar from "./Components/UserProfilesidebar/UserProfilesidebar";
+import PaymentReceipt from "./Components/Services/PaymentReceipt";
+import Chat from "./Components/ChatComponent/Chat.js"
 function App() {
   return (
     <div className="App">
@@ -25,15 +27,16 @@ function App() {
         <Route path={'/Listing'} element={<Listing/>} > </Route>
         <Route path="/MyDetails" element={<MyDetails/>}></Route>
        
-        <Route path={"/details"} element = {<Detailssidebar/>}/>
+        {/* <Route path={"/details"} element = {<Detailssidebar/>}/> */}
 
-        <Route path={"/details/generaldetails"} element = {<Details/>}/>
+        <Route path={"/details"} element = {<Details/>}/>
 
         <Route path={'/UserProfile'} element={<UserProfile/>} > </Route>
 
         <Route path={'/Login'} element={<Login/>} ></Route>
 
         <Route path="/details/address" element={<Address/>}></Route>
+        <Route path="/details/chat" element={<Chat/>}></Route>
                            
         <Route path="/details/payment" element={<Payment/>}></Route>
         <Route path="/paymentReceipt" element={<PaymentReceipt/>}></Route>

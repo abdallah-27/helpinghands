@@ -6,11 +6,12 @@
 }
 
 .writeaddress_div {
-    border: 1px solid #FCF8E8;
+    border: 1px solid #070707;
     padding: 1%;
     background-color: #FCF8E8;
     margin-right: 4px;
-    ;
+    margin-left: 5%;
+    margin-top: 1%;
 }
 
 .innerAddress_div {
@@ -37,6 +38,7 @@
 
 .text-line {
     width: 290px;
+    /* margin-left: 1%; */
 }
 
 .rightaddress_div {
