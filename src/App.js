@@ -36,8 +36,10 @@ function App() {
         <Route path="/details/address" element={<Address/>}></Route>
                            
         <Route path="/details/payment" element={<Payment/>}></Route>
+        <Route path="/paymentReceipt" element={<PaymentReceipt/>}></Route>
+        <Route path="/UserProfilesidebar" element={<UserProfilesidebar/>}></Route>
        
-
+        
       </Routes>
     
            

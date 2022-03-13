@@ -18,8 +18,12 @@ const nodes =
     value: 'category',
     label: 'Categories',
     children: [
-        { value: 'driving', label: 'driving' },
+        { value: 'Plumbing', label: 'plumbing' },
         { value: 'baby-sitting', label: 'baby-sitting' },
+        { value: 'Gardening', label: 'Gardening' },
+        { value: 'Tutors', label: 'Tutors' },
+        { value: 'driving', label: 'driving' },
+      
     ],
 }];
 const nodes2 = 
@@ -29,6 +33,19 @@ const nodes2 =
     children: [
         { value: 'driving', label: '0-100$' },
         { value: 'baby-sitting', label: '101$-105$' },
+    ],
+}];
+const nodes3 = 
+[{
+    value: 'Location',
+    label: 'Location',
+    children: [
+        { value: 'Mannheim', label: 'Mannheim' },
+        { value: 'Heidelberg', label: 'Heidelberg' },
+        { value: 'Seckenheim', label: 'Seckenheim' },
+        { value: 'Cologne', label: 'Cologne' },
+        { value: 'Munich', label: 'Munich' },
+        { value: 'Berlin', label: 'Berlin' },
     ],
 }];
 const icons = {
@@ -58,6 +75,8 @@ class Widget extends React.Component {
         expanded1: [],
         checked2: [],
         expanded2: [],
+        checked3: [],
+        expanded3: [],
     };
 
     render() {
@@ -77,6 +96,14 @@ class Widget extends React.Component {
             expanded = { this.state.expanded2 }
             onCheck = { checked2 => this.setState({ checked2 }) }
             onExpand = { expanded2 => this.setState({ expanded2 }) }
+            icons={icons}
+            />
+
+< CheckboxTree nodes = { nodes3 }
+            checked = { this.state.checked3 }
+            expanded = { this.state.expanded3 }
+            onCheck = { checked3 => this.setState({ checked3 }) }
+            onExpand = { expanded3 => this.setState({ expanded3 }) }
             icons={icons}
             />
 

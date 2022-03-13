@@ -4,7 +4,25 @@ import { MdFormatAlignJustify,MdOutlineDateRange } from "react-icons/md";
 
 
 const UserProfilesidebar=()=>{
+    const navigate = useNavigate();
+    const location = useLocation();
+    useEffect(() => {
 
+//  console.log(location);
+//             console.log(location.state);
+//             //console.log(location.state.data);
+//             if(location.state == null){
+//               console.log("inside null")
+//               navigate('/UserProfile',{ state: null })
+//             }
+//             else {
+//               navigate('/UserProfile',{ state: { data: location.state.data } })
+//             }
+//         console.log("Componented about mounted");
+      
+     
+    }, [])
+    const data = location.state.data
     return(
     <div className="UP_container">
     <div className="UP_left_div">
@@ -18,7 +36,7 @@ const UserProfilesidebar=()=>{
             <div className="UP_GD_div">
                 <div className="UP_aa"  >
                      <MdFormatAlignJustify className="UP_iconofdetail" />
-                    <NavLink className="UP_aa" to="" >My Details</NavLink>
+                    <Link className="UP_aa" to="/MyDetails" >My Details</Link>
                 </div>
             </div>
             <div className="UP_GD_div">
