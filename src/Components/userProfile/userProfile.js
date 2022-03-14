@@ -1,7 +1,7 @@
 import * as React from "react";
 import { render } from "react-dom";
 import ReactDOM from "react-dom";
-import "./UserProfile.css";
+import "./userProfile.css";
 import UserProfileSidebar from "../UserProfilesidebar/UserProfilesidebar";
 import { useNavigate } from "react-router-dom";
 import Data from "./data.json";

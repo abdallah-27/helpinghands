@@ -2,7 +2,7 @@ import "./App.css";
 // import { NavLink, Route,Routes, Switch } from "react-router-dom";
 import Home from './Components/Home/Home'
 import Listing from "./Components/Listing/Listing";
-import UserProfile from "./Components/userProfile/UserProfile";
+import UserProfile from "./Components/userProfile/userProfile";
 import Login from "./Components/Login/Login"
 import MyDetails from "./Components/MyDetails.js/MyDetails";
 import { NavLink, Route, Routes } from "react-router-dom";

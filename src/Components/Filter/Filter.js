@@ -20,17 +20,20 @@ class Filter extends React.Component
     {
         return(
             <div className="dropdown">
+
+                <DropdownButton id="dropdown-basic-button" variant ="success" title="Date and Time">
+                    {this.filter.categories.map(data =>(
+                    <Dropdown.Item >{data}</Dropdown.Item>
+                    ))}
+                </DropdownButton>
+                
                 <DropdownButton id="dropdown-basic-button" variant ="success" title="Location">
                     {this.filter.location.map(data =>(
                     <Dropdown.Item >{data}</Dropdown.Item>
                     ))}
                 </DropdownButton>
 
-                <DropdownButton id="dropdown-basic-button" variant ="success" title="Categories">
-                    {this.filter.categories.map(data =>(
-                    <Dropdown.Item >{data}</Dropdown.Item>
-                    ))}
-                </DropdownButton>
+                
 
                 {/* <DropdownButton id="dropdown-basic-button" variant ="success" title="Price Range">
                     {this.filter.price.map(data =>(

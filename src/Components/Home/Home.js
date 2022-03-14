@@ -9,11 +9,13 @@ import { MdOutlineAccountCircle, MdOutlineHome } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { useNavigate,useLocation } from "react-router-dom";
 import Listing from "../Listing/Listing";
-import UserProfile from "../userProfile/UserProfile";
+import UserProfile from "../userProfile/userProfile";
 import Login from "../Login/Login"
 import Header from "../Header/Header";
 // import { Switch } from "@material-ui/core";
 import './Home.css'
+import { DropdownButton } from "react-bootstrap";
+import { Dropdown } from "bootstrap";
 
 const Home = () => {
     const location = useLocation();
@@ -53,7 +55,7 @@ const Home = () => {
      navigate('/Login')
     };
  
-
+    
   return (
     <div className="content_home">
       <div className="Header_div_home">
@@ -93,7 +95,8 @@ const Home = () => {
         <section className="py-4 container_home">
           <div className="row justify-content-center">
             <div className="col-12 mb-5">
-              <div className="mb-3 col-4 mx-auto text-center_home">
+              <div className="mx-auto text-center_home">
+                <Filter/>
                 <input
                   type="text"
                   placeholder="Search for more services"
@@ -101,8 +104,10 @@ const Home = () => {
                   value={filter}
                   onChange={searchText.bind(this)}
                 />
+                <button type="button" className="btn btn-outline search_home">
+                Search
+                </button>
               </div>
-              <div className="text-center_home"></div>
             </div>
             {dataSearch.map((item, index) => {
               return (

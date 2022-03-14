@@ -7,7 +7,7 @@ import { Popup } from "react-chat-elements";
 import { NavLink, Route, Routes } from "react-router-dom";
 import { useNavigate,useLocation } from "react-router-dom";
 import Listing from "../Listing/Listing";
-import UserProfile from "../userProfile/UserProfile";
+import UserProfile from "../userProfile/userProfile";
 import Login from "../Login/Login"
 import Header from "../Header/Header";
 // import { Switch } from "@material-ui/core";

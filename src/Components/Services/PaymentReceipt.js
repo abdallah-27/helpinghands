@@ -8,13 +8,6 @@ import PaymentData from "./PaymentData.json"
 function PaymentReceipt() {
     const location = useLocation();
 
-//     email: ""
-// month: "2021"
-// phone: ""
-// surname: ""
-// username: ""
-// year: "August"
-// zip: ""status
     console.log(location);
     console.log(location.state.data.year);
 
@@ -29,6 +22,10 @@ function PaymentReceipt() {
    
     const phone = location.state.data.phone;
     const username = location.state.data.username;
+
+    const price = location.state.data.price;
+    const cash = location.state.data.cash;
+    const paypal = location.state.data.paypal;
    
 
     return(
@@ -46,16 +43,16 @@ function PaymentReceipt() {
                             </div>
                             
                             <div className="row">
-                                <h3>Email: {post.email}</h3>
+                                <h3>Email: {email}</h3>
                             </div>
                             <div className="row">
                                 <h3>Service Name: {post.serviceName}</h3>
                             </div>
                             <div className="row">
-                                <h3>Payment Type: {post.paymentType}</h3>
+                                <h3>Payment Type: {paypal}</h3>
                             </div>
                             <div className="row">
-                                <h3>Amount: {post.amountPaid}</h3>
+                                <h3>Amount: {price}</h3>
                             </div>
                             </div>
                         )
@@ -64,15 +61,9 @@ function PaymentReceipt() {
 
                 <div className="input-container mt">
                     <label><h2>Appointment confirmed</h2></label>
-                    {/* <h4>Enter card number</h4> */}
-                    {/* <input
-                        placeholder="Please enter your credit card number"/> */}
                 </div>
   
-              {/* <div className="input-container"> */}
-                  {/* <h4>Card Holder</h4> */}
-                  {/* <input  type="text" placeholder="Please enter your full name" required/> */}
-              {/* </div> */}
+              
             </form>
         </div>
 

@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import { useNavigate } from "react-router-dom";
 
 import { useCookies } from 'react-cookie';
-import UserProfile from "../userProfile/UserProfile";
+import UserProfile from "../userProfile/userProfile";
 import './Login.css'
 
 const Login = () => {
