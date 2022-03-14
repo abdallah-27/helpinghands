@@ -13,7 +13,7 @@ import Details from "./Components/Services/Details";
 import Address from "./Components/Services/Address";
 import Payment from "./Components/Services/Payment";
 import UserProfilesidebar from "./Components/UserProfilesidebar/UserProfilesidebar";
-import Chat from "./Components/Chat/Chat";
+import Chat from "./Components/ChatComponent/Chat";
 import Header from "./Components/Header/Header";
 import Home2 from "./Components/Home/Home2";
 import PaymentReceipt from "./Components/Services/PaymentReceipt";
@@ -44,7 +44,7 @@ function App() {
        
         {/* <Route path={"/details"} element = {<Detailssidebar/>}/> */}
 
-        <Route path={"/details"} element = {<Details/>}/>
+        <Route path={"/details/generaldetails"} element = {<Details/>}/>
 
         <Route path={'/UserProfile'} element={<UserProfile/>} > </Route>
 

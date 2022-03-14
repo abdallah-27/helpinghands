@@ -10,7 +10,7 @@ console.log(`${addressarray} Araay`);
         <input type="radio" ></input>
         <div class="card_address">
         <label>
-           <h5>Home</h5>
+           <h5 className='titleofsavedaddress'>{addrs.addressTitle}</h5>
            <hr></hr>
            <p>{addrs.street_houseno},
               { addrs.postal }, {addrs.city}, 

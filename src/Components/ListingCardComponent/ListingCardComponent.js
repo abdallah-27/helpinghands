@@ -17,14 +17,13 @@ const ListingCardComponent = ({title, tag, age, price, LicNo,imgsrc}) => {
   
       <div className="MainCard">
         <div>
-        <Link to="/details" style={{ textDecoration: 'none' }}>
+        <Link to="/details/generaldetails" style={{ textDecoration: 'none' }}>
           <MDBCard className="card_comp shadow">
         
             <MDBCardBody className="CardImg">
             <img className="Card_compImg"
                 src= {imgsrc}
-                alt=""
-              />
+                alt=""/>
               <div className="cardContent">
                 
             

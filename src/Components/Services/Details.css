@@ -2,9 +2,42 @@
     /*the sidebar is not in content*/
     display: flex;
     flex-direction: row;
-    /* margin-left: 2px;
-    margin-top: 2px;
- */
+    margin-left: 2px;
+    margin-top: 13%;
+ 
+}
+.textAreaDetails{
+    width: 90%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    margin-left: -11%;
+}
+
+.btnnext{
+    color: #004A5F;
+    text-align: center;
+    border-color: #004A5F;
+    padding: 1%;
+    border-radius: 3px;
+    width: 200px;
+}
+
+
+.btnnext:hover {
+    color: white;
+    background-color: #004A5F;
+} 
+
+.headerdiv_details{
+    margin-top: 0%;
+    position: fixed;
+
 }
 
 .subTitle {
@@ -25,10 +58,10 @@
 
 .center_div {
     width: 570px;
-    height: 450px;
-    margin-left: 7%;
-    background-color: #fcf8e8;
-    /* margin-right: 4px; */
+    height: 464px;
+    margin-left: 4%;
+    background-color: white;
+    margin-right: 0%;
     border: 1px solid #cccccc;
     box-shadow: 1px 1px #cccccc;
     border-radius: 2%;
@@ -57,7 +90,7 @@
     text-align: left;
 }
 
-textarea {
+.textAreaDetails{
     width: 90%;
     height: 100px;
     padding: 12px 20px;
@@ -69,6 +102,8 @@ textarea {
     resize: none;
     margin-left: -11%;
 }
+
+
 
 .Addimage_div {
     text-align: left;
@@ -93,11 +128,11 @@ input[type="file"] {
     border: 1px solid #cccccc;
     box-shadow: 1px 1px #cccccc;
     border-radius: 3%;
-    background-color: #fcf8e8;
+    background-color: #578AB0;
 }
 
 .addpht_icon {
-    color: #44bba4;
+    color: #004A5F;
 }
 
 .imagebox {
@@ -105,7 +140,7 @@ input[type="file"] {
     margin-left: 5px;
     margin-top: 5px;
     margin-right: 5px;
-    border: 1px solid black;
+    border: 1px solid white;
     width: 80px;
     height: 80px;
 }
@@ -116,6 +151,7 @@ input[type="file"] {
     margin-top: 5px;
     width: 217px;
     height: 55px;
+    color:white;
 }
 
 .freelance-information {
@@ -123,6 +159,7 @@ input[type="file"] {
     height: 80px;
     margin-left: 40%;
     margin-top: -26%;
+    color:white;
 }
 
 .name {
@@ -145,7 +182,7 @@ input[type="file"] {
     height: 45px;
     margin-top: 2%;
     width: 300px;
-    background-color: #fcf8e8;
+    background-color: #578AB0;
 }
 
 .verification_icon {
@@ -163,22 +200,25 @@ input[type="file"] {
 .Id_div {
     margin-left: 1%;
     margin-top: 3%;
+    color:white;
 }
 
 .Ratingreview_div {
     width: 300px;
-    height: 230px;
+    height: 255px;
     border: 1px solid #b1b4b4;
     box-shadow: 1px 1px #cccccc;
     border-radius: 3%;
     margin-top: 2%;
     display: flex;
     flex-direction: column;
-    background-color: #fcf8e8;
+    color:white;
+    background-color: #578AB0;
 }
 
-.Title_div {
-    margin-left: -70%;
+.Titlediv_details{
+text-align: left;
+margin-left: 5%;
 }
 
 .label_Review {
@@ -202,17 +242,22 @@ input[type="file"] {
 }
 
 .Review_title {
-    width: 68%;
-    margin-left: -9%;
+    width: 200px;
+    margin-left: 2%;
     height: 50%;
-    margin-top: 2%;
+    margin-top: 5%;
+    font-size: large;
 }
 
 .reviewinwords {
-    width: 150px;
+    width: 100%;
     height: 30px;
-    margin-left: 20%;
-    margin-top: -11%;
+    /* margin-left: 27%; */
+    /* margin-top: -11%; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 3%;
 }
 
 .reviewinwordsandstars {
@@ -220,6 +265,7 @@ input[type="file"] {
     height: 30px;
     display: flex;
     flex-direction: column;
+    margin-top: 5%;
 }
 
 .star1 {
@@ -230,7 +276,7 @@ input[type="file"] {
 .star_div {
     display: flex;
     flex-direction: row;
-    margin-left: 5%;
+    margin-left: 17%;
 }
 
 .line2_reviewwords {
@@ -238,7 +284,7 @@ input[type="file"] {
 }
 
 .Btn_next_div {
-    margin-top: 20%;
+    margin-top: 10%;
     align-items: center;
 }
 

@@ -1,11 +1,26 @@
 import './Butt.css'
 
 const Butt = (props) =>{
-    let {nameofbtn, buttonPress, addressarray }=props
-    console.log(`${buttonPress} Buuton`)
+    let {nameofbtn, buttonPress, addressarray,comp }=props
+    console.log(`${comp} Buuton`);
+    let className='';
+    if(comp==='Detailsnextbtn'){
+       
+        className ='btnnext';
+    }
+
+    if(comp==='Addresssaveaddress'){
+        className ='btnsaveaddress';
+    }
+
+    if(comp==='AddressNext'){
+        className ='btnnextaddress';
+    }
+
+
 return(
 <div>
-    <button className='bttn' onClick={() => buttonPress()}>{nameofbtn} </button>
+    <button className={className} onClick={() => buttonPress()}>{nameofbtn} </button>
 </div>)
 }
 

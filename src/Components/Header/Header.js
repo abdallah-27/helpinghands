@@ -4,7 +4,7 @@ import Detailssidebar from '../Detailssidebarcomponent/Detailssidebar';
 import Home from '../Home/Home';
 import { useNavigate } from "react-router-dom";
 import { FaHandshake } from "react-icons/fa";
-import { MdOutlineAccountCircle, MdOutlineHome } from "react-icons/md";
+import { MdOutlineAccountCircle, MdOutlineHome, MdLogout } from "react-icons/md";
 import { useCookies,cookies } from 'react-cookie';
 
 
@@ -65,7 +65,7 @@ const Header = () => {
            
                    
             <button id="btn_profile" accept='image' name="file" className='logout' onClick={logout} > </button>
-            <MdOutlineAccountCircle className='account_icon' />     
+            <MdLogout className='account_icon' />     
             </div>
 
 

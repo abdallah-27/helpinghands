@@ -15,7 +15,8 @@ import Header from '../Header/Header';
 
 const Details = () => {
     return (
-        <div> <Header></Header>
+        <div>
+            <div> <Header></Header></div> 
         <div className="content_details">
            
            <div>
@@ -39,7 +40,7 @@ const Details = () => {
                             <div className='DescDetail'>
                             <h5>Describe your order in detail</h5>
                             </div>
-                            <Textareacomponent placeholder="eg: Get your own tools bitte"></Textareacomponent>
+                            <Textareacomponent comp="Details"  placeholder="eg: Get your own tools bitte"></Textareacomponent>
                             <br></br>
                             <div className='Addimage_div'>
                             <h5>Add images</h5>
@@ -54,7 +55,7 @@ const Details = () => {
                             </label>
 
                             <div className='Btn_next_div'>
-                                <Butt nameofbtn="NEXT" style={{ width: "80px", height: "40px" }}> </Butt>
+                                <Butt comp="Detailsnextbtn" nameofbtn="NEXT" style={{ width: "80px", height: "40px" }}> </Butt>
                             </div>
 
 
@@ -65,7 +66,7 @@ const Details = () => {
               
                     <div className="Freelancersinfo_Div">
                         <div className='imagebox'>
-                            <img></img>
+                            <img src=""></img>
                         </div>
                         <div className='freelance-information'>
                             <label className='name'>Name: Alex H. </label>
@@ -97,27 +98,18 @@ const Details = () => {
                     </div>
 
                     <div className='Ratingreview_div'>
-                        <div className='Title_div'>
+                        <div className='Titlediv_details'>
                             <label className='label_Review'>Reviews</label>
                         </div>
                         <div className='Photo_Reviewtitle_div'>
                             <div className='user_photo'>
                              <img className='pht_user' src="https://images.unsplash.com/photo-1622322062536-895d869b09ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="distressed Italian wall in pink and grey hues"></img> 
                             </div>
-
+                            <div className="reviewititleandstars" >
                             <div className='Review_title'>
                                 <label>Very Professional</label>
                             </div>
-
-
-
-                        </div>
-                        <div className='reviewinwords'>
-                            <label>something..........</label>
-                        </div>
-                        <div className='reviewinwordsandstars'>
-                            <label className='line2_reviewwords'>something..........</label>
-                            <label> </label>
+                           
                             <div className='star_div'>
                                 <MdStarRate className='star1' />
                                 <MdStarRate className='star1' />
@@ -125,6 +117,19 @@ const Details = () => {
                                 <MdStarRate className='star1' />
                                 <MdStarHalf className='star1' />
                             </div>
+</div>
+
+
+                        </div>
+                        
+                        <div className='reviewinwords'>
+                            <label>A fantastic organisation! Great cutomer support from beginning to end of the process.
+                            The team are really informed and go the extra mile at every stage. I would recommend them unreservedly.
+                            </label>
+                        </div>
+                           
+                           
+                        
                         </div>
 
                     </div>
@@ -133,7 +138,7 @@ const Details = () => {
 
 
             </div>
-</div>
+
     )
 }
 
