@@ -10,8 +10,8 @@
     height: 15px;
 }
 
-.CardPosition {
-    margin-top: 300px;
+.CardPosition_listing {
+    margin-top: 100px;
     margin-left: -12%;
     margin-right: 60px;
 }
@@ -22,16 +22,15 @@
     margin-bottom: -2%;
 }
 
-.Header_div {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100px;
-    background-color: #578AB0;
-    padding: 1%;
-    position: fixed;
+.container_listing {
+    margin-top: 10%;
+    text-align: center;
 }
 
-.container_listing {
-    /* margin-top: 2%; */
+.reviews {
+    padding: 2px;
+}
+
+.status {
+    padding: 2px;
 }

@@ -44,7 +44,7 @@ function App() {
        
         {/* <Route path={"/details"} element = {<Detailssidebar/>}/> */}
 
-        <Route path={"/details"} element = {<Details/>}/>
+        <Route path={"/details/generaldetails"} element = {<Details/>}/>
 
         <Route path={'/UserProfile'} element={<UserProfile/>} > </Route>
 
@@ -53,13 +53,13 @@ function App() {
         <Route path="/details/address" element={<Address/>}></Route>
         <Route path="/details/chat" element={<Chat/>}></Route>
                            
-        <Route path="/Payment" element={<Payment/>}></Route>
+        <Route path="/details/payment" element={<Payment/>}></Route>
         
         <Route path={'/Slider'} element={<Slider/>}></Route>
 
         <Route path="/paymentReceipt" element={<PaymentReceipt/>}></Route>
         <Route path="/UserProfilesidebar" element={<UserProfilesidebar/>}></Route>
-        <Route path="/details/chat" element={<Chat/>}></Route>
+        
        
         
       </Routes>

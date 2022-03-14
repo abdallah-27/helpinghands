@@ -24,7 +24,7 @@ const Detailssidebar = () => {
         console.log("Componented about mounted");
         //console.log(history);
        //history.push("/details/generaldetails");
-      navigate("/details/generaldetails")
+     // navigate("/details/generaldetails")
 
     }, [])
     return (
@@ -44,13 +44,7 @@ const Detailssidebar = () => {
                                     <NavLink className="aa" to="/details/address" >Address</NavLink>
                                 </div>
                             </div>
-                            <div className="GD_div">
-                                <div className="aa">
-                                    <MdInsertInvitation className="iconofdetail" />
-                                    <NavLink className="aa" to="/details/datetime">Date and Time</NavLink>
-                                </div>
-
-                            </div>
+             
                             <div className="GD_div">
                                 <div className="aa">
                                     <MdCreditCard className="iconofdetail" />
@@ -61,11 +55,10 @@ const Detailssidebar = () => {
 
 
                             <div >
-                                <div className="chat_div" >
-                                    
-                                    <NavLink  to="/details/chat"><MdChat className="Chat_icon" /></NavLink>
-                                    <div className="Text_chat" >
-                                    <p>Do you want to discuss more about the service? Chat to the Service Provider</p>
+                                <div className="GD_div" >
+                                <div className="aa">
+                                <MdChat className="iconofdetail" />
+                                    <NavLink className="aa" to="/details/chat">Chat</NavLink>
                                     </div>
                                 </div>
 

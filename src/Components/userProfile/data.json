@@ -3,7 +3,7 @@
         "Pname": "Alex Thomas",
         "Reviews": "4.6/5",
         "Status": "Payment Done",
-        "Delete": "Cancel"
+        "Delete": "Cancel Appointment"
 
     },
     {
@@ -11,7 +11,7 @@
         "Pname": "Noah Paul",
         "Reviews": "4.8/5",
         "Status": "Payment Done",
-        "Delete": "Cancel"
+        "Delete": "Cancel Appointment"
 
     }
 ]

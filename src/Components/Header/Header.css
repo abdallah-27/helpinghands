@@ -10,7 +10,7 @@
 
 .Heading_div {
     margin-left: 2%;
-    margin-top: 2%;
+    margin-top: 1%;
     color: white;
 }
 
@@ -18,18 +18,20 @@
     width: 100px;
     height: 100px;
     color: white;
+    margin-top: -12%;
+    margin-left: 4%;
 }
 
 .home_icon {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     float: left;
     color: white;
 }
 
 .account_icon {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     margin-top: -10%;
     color: white;
 }
@@ -49,4 +51,12 @@
     width: 30px;
     height: 30px;
     opacity: 50%;
+}
+
+.image_div {
+    margin-top: 0%;
+}
+
+.headingheader {
+    font-size: 30px;
 }

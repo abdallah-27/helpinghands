@@ -10,6 +10,7 @@ import "react-checkbox-tree/lib/react-checkbox-tree.css";
 import { Link, useLocation } from "react-router-dom";
 
 import UserProfileComponent from "./UserProfileComponent";
+import PreviousAppCard from "./PreviousAppCard"
 import SimpleTabs from "../TabComponent/TabComponent";
 import Detailssidebar from "../Detailssidebarcomponent/Detailssidebar";
 import UserProfilesidebar from "../UserProfilesidebar/UserProfilesidebar";
@@ -86,7 +87,7 @@ const UserProfile = (props) => {
             two={
               <div className="postLineDone">
                 <div>
-                  <UserProfileComponent
+                  <PreviousAppCard
                     Pname="Chris Mathews"
                     Reviews="4.8/5"
                     Status="Appointment Done"

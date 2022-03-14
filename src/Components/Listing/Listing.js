@@ -29,7 +29,7 @@ const Listing = () => {
 <div className="container_listing
 ">
      
-      <div className="CardPosition">
+      <div className="CardPosition_listing">
         {
           <ListingCardComponent
             title="Anna Thomas"

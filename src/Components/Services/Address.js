@@ -5,6 +5,7 @@ import Textareacomponent from '../textareacomponent/Textareacomponent';
 import Butt from '../Button/Butt';
 import { Component } from "react";
 import SavedAddress from './Savedaddress';
+import Header from '../Header/Header';
 import {
     MDBCard,
     MDBCardBody,
@@ -73,40 +74,41 @@ class Address extends Component{
 render (){
     let { street_houseno, postal, city, Addtionalinfo, Addressarray } = this.state;
 return(
+<div>
 
-
-        <div className='content_address'>
+        <div className='content_address'> 
+        
           <div>
             <Detailssidebar/>
           </div>
           
                 <div className='writeaddress_div'>
                 <h3>Address</h3>
-                <h6>Where your contractor should arrive</h6>
+                <h6 style={{ textAlign: "left"}}>Where your contractor should arrive</h6>
               
                 <div className='innerAddress_div'>
-                    <div>
+                    <div className='Streethouse_div'>
                         <label>Street and House No.</label>
                         <br></br>
                         <Textlinecomponent type="text" value={street_houseno} id="street" addAddress={(e) => this.addAddress(e)} />
                     </div>
 
-                    <div>
+                    <div className='Postal_div'>
                         <label>Postal Code</label>
                         <br></br>
-                        <Textlinecomponent value ={postal} id="postal" addAddress={(e) => this.addAddress(e)}/>
+                        <Textlinecomponent className="Lines" value ={postal} id="postal" addAddress={(e) => this.addAddress(e)}/>
                     </div>
 
-                    <div>
+                    <div className='City_div'>
                         <label>City</label>
                         <br></br>
                         <Textlinecomponent value={city} id="city" addAddress={(e) => this.addAddress(e)} />
                     </div>
 
-                    <div>
+                    <div className='Additionalinfo_div'>
                         <label>Additional Information</label>
                         <br></br>
-                        <Textareacomponent placeholder ="eg: opposite to netto" className="txtarea" value={Addtionalinfo}
+                        <Textareacomponent className="txtarea" placeholder ="eg: opposite to netto"  value={Addtionalinfo}
                          id="Additionalinfo" addAddress={(e) => this.addAddress(e)} />
                     </div>
 
@@ -125,6 +127,8 @@ return(
             <div className='rightaddress_div'>
                  <SavedAddress addressarray={Addressarray}/>
             </div>
+        </div>
+        <div style={{marginTop:"-44%"}}><Header></Header></div>
         </div>
     
 )}

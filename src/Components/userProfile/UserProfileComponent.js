@@ -7,12 +7,13 @@ import {
   MDBCardText,
   MDBBtn,
 } from "mdb-react-ui-kit";
+import { Button } from "bootstrap";
 const UserProfileComponent = ({ Pname, Reviews, Status, Delete }) => {
   return (
-    <div style={{}}>
-      <div className="MainCard2">
+    <div style={{textAlign: "center"}}>
+      <div style={{marginTop: "-31%"}} className="MainCard2">
        
-          <MDBCard className="card_comp2"> 
+          <MDBCard  className="card_comp2"> 
             <MDBCardBody>
               <img
                 className="Card_compImg2"
@@ -21,11 +22,21 @@ const UserProfileComponent = ({ Pname, Reviews, Status, Delete }) => {
               />
               <div className="cardContent2">
                 <MDBCardText>Appointment Details</MDBCardText>
-                <MDBCardTitle className="title2">Name: {Pname}</MDBCardTitle>
-                <MDBCardText>{Reviews}</MDBCardText>
-                <MDBCardText>{Status}</MDBCardText>
+                <MDBCardTitle className="title2">{Pname}</MDBCardTitle>
+                <MDBCardText className="reviews">Reviews:  {Reviews}</MDBCardText>
+                <MDBCardText className="status">Status:  {Status}</MDBCardText>
+               
+                   <MDBCardText className="cancel"><button
+                   type="submit"
+                   className="btn btn-dark btn-lg"
+                   onClick=""
+                 >
+                   {Delete}
+                 </button></MDBCardText>
+              
+               
               </div>
-              <MDBCardText className="price2">{Delete}</MDBCardText>
+             
             </MDBCardBody>
           </MDBCard>
         </div>

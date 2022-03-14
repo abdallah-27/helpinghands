@@ -4,7 +4,7 @@ import Detailssidebar from '../Detailssidebarcomponent/Detailssidebar';
 import Home from '../Home/Home';
 import { useNavigate } from "react-router-dom";
 import { FaHandshake } from "react-icons/fa";
-import { MdOutlineAccountCircle, MdOutlineHome } from "react-icons/md";
+import { MdOutlineAccountCircle, MdOutlineHome,MdLogout } from "react-icons/md";
 import { useCookies,cookies } from 'react-cookie';
 
 
@@ -24,7 +24,15 @@ const Header = () => {
             
           }
         };
-
+const homebtn=()=>{
+    if ( data!= "null") {
+           
+        navigate("/Home", { state: { data: data } });
+      } else {
+        navigate("/Home", { state: null });
+        
+      }
+}
         const logout=()=>{
             console.log("logout button")
             setCookie('data',null, { path: '/' });
@@ -40,13 +48,15 @@ const Header = () => {
             </div>
 
             <div className="Heading_div">
-            <h1> HelpingHands</h1>
+            <h1 className="headingheader"> HelpingHands</h1>
            </div>
 
             <div className="Login_div">
-                 <nav>
+                 {/* <nav>
                     <NavLink to="/Home" exact><MdOutlineHome className='home_icon' /></NavLink>
-                </nav>
+                </nav> */}
+                <button id="btn_profile" accept='image' name="file" className='profilebtn' onClick={homebtn} > </button>
+            <MdOutlineHome className='home_icon' />     
 
             </div>
 
@@ -61,7 +71,7 @@ const Header = () => {
            
                    
             <button id="btn_profile" accept='image' name="file" className='logout' onClick={logout} > </button>
-            <MdOutlineAccountCircle className='account_icon' />     
+            <MdLogout className='logout_icon' />      
             </div>
 
 

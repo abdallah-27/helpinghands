@@ -15,8 +15,9 @@ import Header from '../Header/Header';
 
 const Details = () => {
     return (
-        <div> <Header></Header>
-        <div className="content_details">
+        <div>
+           
+        <div style={{textAlign: "center"}} className="content_details">
            
            <div>
                <Detailssidebar />
@@ -39,7 +40,7 @@ const Details = () => {
                             <div className='DescDetail'>
                             <h5>Describe your order in detail</h5>
                             </div>
-                            <Textareacomponent placeholder="eg: Get your own tools bitte"></Textareacomponent>
+                            <Textareacomponent className="textAreaDetails" placeholder="eg: Get your own tools bitte"></Textareacomponent>
                             <br></br>
                             <div className='Addimage_div'>
                             <h5>Add images</h5>
@@ -133,6 +134,7 @@ const Details = () => {
 
 
             </div>
+            <div style={{marginTop:"-43%"}}><Header></Header></div>
 </div>
     )
 }

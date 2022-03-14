@@ -35,12 +35,15 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div >
+     <div style={{ 
+      backgroundImage:" https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
+    }}></div>
       <div className="LoginContainer">
         <form id="reg-login">
           <h3
           className="loginHeading"
-          style={{ fontSize: "2rem", marginTop: "5rem", textAlign: "center" }}
+          style={{ fontSize: "2rem", marginTop: "5rem", textAlign: "center", textDecoration: "underline" }}
           >
             Login
           </h3>
