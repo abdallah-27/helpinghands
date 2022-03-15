@@ -35,7 +35,7 @@ const Detailssidebar = () => {
                             <div className="GD_div">
                                 <div className="aa">
                                     <MdFormatAlignJustify className="iconofdetail" />
-                                    <NavLink to="/details/generaldetails" >General Details</NavLink>
+                                    <NavLink exact to="/details/generaldetails" >General Details</NavLink>
                                 </div>
                             </div>
                             <div className="GD_div">

@@ -137,15 +137,15 @@ function Payment()  {
                         </div>
 
                         </div>
-                            <div className="radio_payment">
-                                <h5>
-                                    Cash
-                                    <input type="radio" name="cash" id="cash" value={inputs.cash}/>
-                                </h5>
+                           
+                        
+                        <div className="radio_payment">
+                                
+                                    
+                                    <input type="radio" style={{marginLeft:"-39%",marginTop:"5%"}} name="cash" id="cash" value={inputs.cash}/><h5 style={{marginLeft:"-42%",marginTop:"4%"}}>Cash</h5>
+                                
                                
                             </div>
-                        
-
                         <button className="button_submit" type="submit" onClick={handleSubmit}>Confirm</button>
                         
                 </form>

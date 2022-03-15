@@ -17,15 +17,16 @@ const PreviousAppCard = ({ Pname, Reviews, Status, Delete }) => {
             <MDBCardBody>
               <img
                 className="Card_compImg2_previous"
-                src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
+                src="https://sandbox-uploads.imgix.net/u/1647303789-de419e06ec8a765af0e9d11d52251f3c?w=500&h=500"
                 alt=""
               />
               <div className="cardContent2_previous">
-                <MDBCardText>Appointment Details</MDBCardText>
+                <MDBCardText  className="headding">Appointment Details</MDBCardText>
                 <MDBCardTitle className="title2_previous">Name: {Pname}</MDBCardTitle>
-                <MDBCardText>Reviews: {Reviews}</MDBCardText>
-                <MDBCardText>Status:{Status}</MDBCardText>
-                <MDBCardText>Write a review : <input type="text" placeholder="Write a review" style={{width:"40%", height:"10%"}}></input></MDBCardText>
+                <MDBCardText className="service2">Service used: Driving</MDBCardText>
+                
+                <MDBCardText  className="status2">Status:{Status}</MDBCardText>
+                <MDBCardText className="review2">Write a review : <input type="text" placeholder="Write a review" style={{width:"40%", height:"10%"}}></input></MDBCardText>
                 
                
               </div>

@@ -8,7 +8,7 @@ import {
   MDBBtn,
 } from "mdb-react-ui-kit";
 import { Button } from "bootstrap";
-const UserProfileComponent = ({ Pname, Reviews, Status, Delete }) => {
+const UserProfileComponent = ({ Pname, Reviews, Status, Delete,imgsrc }) => {
   return (
     <div style={{textAlign: "center"}}>
       <div style={{marginTop: "-31%"}} className="MainCard2">
@@ -17,7 +17,7 @@ const UserProfileComponent = ({ Pname, Reviews, Status, Delete }) => {
             <MDBCardBody>
               <img
                 className="Card_compImg2"
-                src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
+                src={imgsrc}
                 alt=""
               />
               <div className="cardContent2">

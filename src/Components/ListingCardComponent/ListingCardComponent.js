@@ -32,7 +32,7 @@ const ListingCardComponent = ({title, tag, age, price, LicNo,imgsrc}) => {
                 <MDBCardTitle className="title">Name: {title}</MDBCardTitle>
                 <MDBCardText className="chatIcon"> 
                 
-                <Link to={"/details/chat"} style={{ textDecoration: 'none' }}><BsChatRightTextFill/></Link>
+                <Link to={"/details/chat"} style={{ textDecoration: 'none',color:"white" }}><BsChatRightTextFill/></Link>
                 </MDBCardText>
                 <MDBCardText className="age">{age}</MDBCardText>
                 <MDBCardText className="licno">{LicNo}</MDBCardText>

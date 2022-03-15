@@ -17,7 +17,7 @@
 }
 
 .postLineDone {
-    margin-top: 40%;
+    margin-top: 42%;
 }
 
 .noLogin {
@@ -40,7 +40,7 @@
     flex-direction: column;
     text-align: left;
     color: white;
-    line-height: 6%;
+    line-height: 9%;
     font-weight: 100;
 }
 
@@ -144,4 +144,27 @@
     color: white;
     line-height: 8%;
     font-weight: 100;
+}
+
+.review2 {
+    padding: 1%;
+    margin-left: -4px;
+}
+
+.service2 {
+    padding: 1%;
+    margin-left: -4px;
+}
+
+.status2 {
+    padding: 1%;
+    margin-left: -4px;
+}
+
+.headding {
+    text-decoration: underline;
+}
+
+.title2_previous {
+    font-style: normal;
 }

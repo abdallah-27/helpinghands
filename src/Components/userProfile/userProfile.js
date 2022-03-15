@@ -64,7 +64,7 @@ const UserProfile = (props) => {
   } else if (location.state.data == "loggeduser" || data == "loggeduser") {
     return (
       <div>
-       <div style={{marginTop:"-2%"}}> <Header></Header></div>
+       
         <div><UserProfilesidebar /></div>
         <div className="Tabdiv">
           <SimpleTabs
@@ -78,10 +78,12 @@ const UserProfile = (props) => {
                         Reviews={post.Reviews}
                         Status={post.Status}
                         Delete={post.Delete}
+                        imgsrc={post.imgsrc}
                       />
                     </div>
                   );
                 })}
+                
               </div>
             }
             two={
@@ -98,7 +100,7 @@ const UserProfile = (props) => {
             }
           />
         </div>
-       
+        <div style={{marginTop:"-22%"}}> <Header></Header></div>
       </div>
      
     );
