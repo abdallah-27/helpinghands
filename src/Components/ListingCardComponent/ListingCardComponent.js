@@ -18,7 +18,7 @@ const ListingCardComponent = ({title, tag, age, price, LicNo,imgsrc}) => {
       <div className="MainCard">
         <div>
         <Link to="/details/generaldetails" style={{ textDecoration: 'none' }}>
-          <MDBCard  style={{marginTop: "5%"}}className="card_comp shadow">
+          <MDBCard className="card_comp shadow">
         
             <MDBCardBody className="CardImg">
             <img className="Card_compImg"

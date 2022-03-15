@@ -16,6 +16,9 @@ import Header from "../Header/Header";
 import './Home.css'
 import { DropdownButton } from "react-bootstrap";
 import { Dropdown } from "bootstrap";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 
 const Home = () => {
     const location = useLocation();
@@ -54,7 +57,7 @@ const Home = () => {
    const loginNav = () => {
      navigate('/Login')
     };
- 
+    const [startDate, setStartDate] = useState(new Date());
     
   return (
     <div className="content_home">
@@ -97,6 +100,7 @@ const Home = () => {
             <div className="col-12 mb-5">
               <div className="mx-auto text-center_home">
                 <Filter/>
+                <DatePicker className="" selected={startDate} onChange={(date) => setStartDate(date)} />
                 <input
                   type="text"
                   placeholder="Search for more services"

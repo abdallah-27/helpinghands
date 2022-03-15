@@ -21,11 +21,11 @@ class Filter extends React.Component
         return(
             <div className="dropdown">
 
-                <DropdownButton id="dropdown-basic-button" variant ="success" title="Date and Time">
+                {/* <DropdownButton id="dropdown-basic-button" variant ="success" title="Date and Time">
                     {this.filter.categories.map(data =>(
                     <Dropdown.Item >{data}</Dropdown.Item>
                     ))}
-                </DropdownButton>
+                </DropdownButton> */}
                 
                 <DropdownButton id="dropdown-basic-button" variant ="success" title="Location">
                     {this.filter.location.map(data =>(

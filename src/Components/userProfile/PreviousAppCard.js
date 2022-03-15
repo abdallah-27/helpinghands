@@ -25,6 +25,7 @@ const PreviousAppCard = ({ Pname, Reviews, Status, Delete }) => {
                 <MDBCardTitle className="title2_previous">Name: {Pname}</MDBCardTitle>
                 <MDBCardText>Reviews: {Reviews}</MDBCardText>
                 <MDBCardText>Status:{Status}</MDBCardText>
+                <MDBCardText>Write a review : <input type="text" placeholder="Write a review" style={{width:"40%", height:"10%"}}></input></MDBCardText>
                 
                
               </div>

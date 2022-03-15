@@ -51,27 +51,28 @@ const homebtn=()=>{
             <h1 className="headingheader"> HelpingHands</h1>
            </div>
 
-            <div className="Login_div">
-                 {/* <nav>
-                    <NavLink to="/Home" exact><MdOutlineHome className='home_icon' /></NavLink>
-                </nav> */}
-                <button id="btn_profile" accept='image' name="file" className='profilebtn' onClick={homebtn} > </button>
-            <MdOutlineHome className='home_icon' />     
+           <div className="icons_header">
 
-            </div>
+                <div className="Login_div">
+                    <button id="btn_profile" accept='image' name="file" className='profilebtn' onClick={homebtn} >
+                       
+                    </button>
+                    <MdOutlineHome className='home_icon' />  
+                </div>
 
-            <div className="Profile_div">
-           
-                   
-            <button id="btn_profile" accept='image' name="file" className='profilebtn' onClick={userProfdirection} > </button>
-            <MdOutlineAccountCircle className='account_icon' />     
-            </div>
+                <div className="Profile_div">
+                <button id="btn_profile" accept='image' name="file" className='profilebtn_acc' onClick={userProfdirection} > 
+                
+                </button>
+                <MdOutlineAccountCircle className='account_icon' />     
+                </div>
 
-            <div className="Logout_div">
-           
-                   
-            <button id="btn_profile" accept='image' name="file" className='logout' onClick={logout} > </button>
-            <MdLogout className='logout_icon' />      
+                <div className="Logout_div">
+                <button id="btn_profile" accept='image' name="file" className='logout' onClick={logout} > 
+               
+                </button>
+                <MdLogout className='logout_icon'/>
+                </div>
             </div>
 
 

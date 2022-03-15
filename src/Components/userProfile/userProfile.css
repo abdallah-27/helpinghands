@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 .card_comp2 {
     border-radius: 1rem;
     padding-bottom: 10px;
@@ -111,7 +112,7 @@
     padding-bottom: 10px;
     padding-right: -4%;
     padding-top: -40rem;
-    margin-top: 2%;
+    margin-top: 4%;
     background-color: #578ab0;
     width: 50%;
     height: 32vh;
@@ -119,8 +120,8 @@
 }
 
 .MainCard2_previous {
-    margin-top: -30%;
-    margin-left: -10%;
+    margin-top: -28%;
+    margin-left: -9%;
     scroll-behavior: none;
     width: 100%;
 }
@@ -134,13 +135,13 @@
 }
 
 .cardContent2_previous {
-    margin-top: -16%;
-    margin-left: 30%;
+    margin-top: -18%;
+    margin-left: 32%;
     font-size: 16px;
     display: flex;
     flex-direction: column;
     text-align: left;
     color: white;
-    line-height: 6%;
+    line-height: 8%;
     font-weight: 100;
 }
