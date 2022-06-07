@@ -3,12 +3,29 @@ import { Form, FormLabel } from "react-bootstrap";
 import './Payment.css';
 import PaymentData from "./PaymentData.json";
 import PaymentReceipt from "./PaymentReceipt";
-import {Link, Navigate, Route, Router, useNavigate} from "react-router-dom"
+import {Link, Navigate, Route, Router, useNavigate, useLocation} from "react-router-dom"
 import Detailssidebar from "../Detailssidebarcomponent/Detailssidebar.js";
 import Header from "../Header/Header";
+import { FaHandshake } from "react-icons/fa";
+import { MdOutlineAccountCircle, MdOutlineHome } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 // import * as fs from 'fs'
 function Payment()  {
-
+    const location = useLocation();
+    const toUserprof = () => {
+        const data = document.cookie.replace(/(?:(?:^|.*;\s*)data\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+          console.log(location);
+          console.log(location.state);
+          console.log("datatdtadta"+data)
+    
+          
+          if ( data == "null" || location.state == null ) {
+            console.log("inside null");
+            navigate("/UserProfile", { state: null });
+          } else {
+            navigate("/UserProfile", { state: { data: location.state.data } });
+          }
+    };
     const [inputs, setInputs] = useState({});
     
     const handleChange = (event) => {
@@ -41,7 +58,36 @@ function Payment()  {
     
     return (
       <div>
+<div className="Header_div_home">
+          <div className="image_div_home">
+            <FaHandshake className="Handshake_icon_home" />
+          </div>
 
+          <div className="Heading_div_home">
+            <h1> HelpingHands</h1>
+          </div>
+
+          <div className="Login_div_home">
+            <nav>
+              <NavLink to="/Home" exact>
+                <MdOutlineHome className="home_icon_home" />
+              </NavLink>
+            </nav>
+          </div>
+
+          <div className="Profile_div">
+            <MdOutlineAccountCircle className="account_icon_home" />
+            <button
+              id="btn_profile"
+              accept="image"
+              name="file"
+              className="profilebtn_home"
+              onClick={toUserprof}
+            >
+              {" "}
+            </button>
+          </div>
+        </div>
         <Header/>
       
     <div className="center_content">

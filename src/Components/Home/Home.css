@@ -43,6 +43,11 @@
     gap: 30px;
     text-align: center;
 }
+.text-button {
+    /* display: none; */
+    gap: 30px;
+    text-align: center;
+}
 
 
 .btn-outline {
@@ -112,4 +117,9 @@
     margin-left: 48%;
     margin-right: 0%;
     margin-top: 1%;
+}
+
+.img_home{
+    width: 100%;
+    height: 100%;
 }

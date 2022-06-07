@@ -48,7 +48,7 @@ const Detailssidebar = () => {
                             <div className="GD_div">
                                 <div className="aa">
                                     <MdCreditCard className="iconofdetail" />
-                                    <NavLink className="aa" to="/details/payment">Payment</NavLink>
+                                    <NavLink className="aa" to="/payment">Payment</NavLink>
                                 </div>
 
                             </div>
